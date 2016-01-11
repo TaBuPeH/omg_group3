@@ -17,7 +17,7 @@ Toshko
 4Damo e qk #kappa
 
 
-5
+5 the morale of the day is not to steal from those who steal
 
 
 6
