@@ -12,7 +12,7 @@ Toshko
 
 3 -> BagerMan
 
-4
+4Damo e qk #kappa
 
 
 5
