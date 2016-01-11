@@ -10,7 +10,7 @@ Toshko
 2
 
 
-3
+3 -> BagerMan
 
 4Damo e qk #kappa
 
