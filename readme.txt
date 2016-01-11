@@ -14,7 +14,7 @@ Toshko
 4
 
 
-5
+5 the morale of the day is not to steal from those who steal
 
 
 6
