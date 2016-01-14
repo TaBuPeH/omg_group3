@@ -1,0 +1,8 @@
+1. install xampp
+2. open xampp configuration (httpd.conf) and remove comment before LoadModule vhost
+3. Make sure port 80 is free. 
+4. Create a new Vhost and make sure it is working
+5. Create a 2nd vhost and make sure it is working
+6. Do not forget c:\windows\system32\drivers\etc\hosts :)
+
+helpful "ping the.server.name.you.have"
