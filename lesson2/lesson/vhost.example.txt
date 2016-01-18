@@ -1,0 +1,19 @@
+
+<VirtualHost *:80>
+    
+   
+    ServerName domain.name.goes.here
+    
+	DocumentRoot "d:\some_folder_to_be_loaded\"
+	<Directory "d:\some_folder_to_be_loaded\">
+   
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride All
+		Require all granted
+		
+	</Directory>
+
+
+	
+	
+</VirtualHost>
