@@ -1,0 +1,13 @@
+Create any set of HTML elements
+
+Try to put block elements within inline elements
+
+Try to put inline elements inside inline elements and see if some are not behaving correct
+
+Create a form 
+
+Use at least 4 inputs/textarea/select tags
+
+Use at least one radio button group
+
+Try <label for=''> tag
