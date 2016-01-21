@@ -1,0 +1,42 @@
+div
+{
+	background-color: red;
+}
+
+.testDiv
+{
+	width: 100px;
+	background-color: green;
+}
+.blueDiv
+{
+	background-color: blue;
+}
+
+#firstDiv
+{
+	background-color: yellow;
+}
+
+/*<div id="someId" class='rootElement links'>*/
+.rootElement.links#someId
+{
+	
+}
+
+
+#watisdis #testSpan .links
+{
+	
+}
+
+
+
+div.rootElement span#testSpan a
+{
+	color: #fff;
+}
+div.rootElement #link1
+{
+	color: #F00;
+}
