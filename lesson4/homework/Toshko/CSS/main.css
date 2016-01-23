@@ -1,0 +1,47 @@
+﻿.container
+{
+	width: 70%;
+	background-color: pink;
+	float: left;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 1vw;
+}
+
+.item
+{
+	width: 31.333%;
+	float: left;
+	margin: 1%;
+	position: relative;
+}
+
+.image img
+{
+	width: 100%;
+	float: left;
+}
+
+.text
+{
+	position: absolute;
+	bottom: -5%;
+	left: 0px;
+	font-size: 5vw;
+	font-family: "Monotype Corsiva";
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
+
+.special
+{
+	position: absolute;
+	width: 30%;
+	top: -10%;
+	left: -10%;
+}
+
+.special img
+{
+	width: 100%;
+}
