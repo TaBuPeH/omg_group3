@@ -34,9 +34,9 @@
 
 #sticker {
     position: absolute;
-    left: 13%;
-    top: 0;
-    width: 5%;
+    left: -13%;
+    top: -13%;
+    width: 30%;
 }
 
 #sticker img{
