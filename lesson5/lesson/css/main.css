@@ -1,0 +1,50 @@
+
+ul 
+{
+	/*  UL - padding/margin */
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+ul li:nth-of-type(1)
+{
+	background-color: #FFFF00;
+}
+ul li:nth-of-type(2n+1)
+{
+	background-color: #008000;
+}
+
+
+ul li:hover
+{
+	background-color: #BE0B0B;
+}
+ul li:active
+{
+	background-color: #0000FF;
+}
+
+div.secondDiv h1:nth-child(2)
+{
+	background-color: #BE0B0B;
+	display: block;
+}
+
+div.secondDiv h1:nth-of-type(2)
+{
+	background-color: #BE0B0B;
+	display: block;
+}
+
+div.secondDiv:after {
+     position: absolute;
+
+	 background-color: #000000;     
+     display: block;
+     content: " ";
+     color: #fff;
+     }
