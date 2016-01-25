@@ -1,0 +1,44 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#mainDiv {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: crimson;
+    float: left;
+}
+
+.container {
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+}
+
+.description {
+    color: #ea1409;
+    font-size: 3em;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+#sticker {
+    position: absolute;
+    left: -13%;
+    top: -13%;
+    width: 30%;
+}
+
+#sticker img{
+    width: 100%;
+}

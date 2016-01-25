@@ -1,0 +1,70 @@
+body,
+html
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.item
+{
+	width: 23%;
+	float: left;
+	margin:  1%;
+	position: relative;
+	overflow: hidden;
+}
+
+.image
+{
+	width: 100%;
+}
+
+.image img
+{
+	width: 100%;
+}
+
+.content
+{
+	width: 60%;
+	background-color: pink;
+	margin: 0px 20% 0px 20%;
+	float:left;
+}
+
+
+.topOffer
+{
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+.topOffer img
+{
+	z-index: 600;
+	position: relative;
+}
+
+.whitePromo {
+    background-color: #be0b0b;
+    color: #fff;
+    font-family: "Monotype Corsiva";
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 21px;
+    position: absolute;
+    right: -32px;
+    text-align: center;
+    top: -11px;
+    transform: rotate(40deg);
+    width: 70%;
+    z-index: 500;
+}
+
+.fixedImage
+{
+	position:fixed;
+	bottom: 0px;
+	right: 0px;
+}
