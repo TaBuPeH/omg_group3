@@ -1,0 +1,112 @@
+﻿body
+{
+	background-color: #98ff63;
+}
+
+.container
+{
+	width: 80%;
+	background-color: pink;
+	float: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2vw;
+	transition: 0.3s;
+}
+
+.item
+{
+	width: 31.333%;
+	float: left;
+	margin: 1%;
+	position: relative;
+	transition: 0.3s;
+}
+
+.image img, .image
+{
+	width: 100%;
+	float: left;
+}
+
+.text
+{
+	position: absolute;
+	bottom: -5%;
+	left: 0px;
+	font-size: 5vw;
+	font-family: "Monotype Corsiva";
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
+
+.special
+{
+	position: absolute;
+	width: 40%;
+	top: -15%;
+	left: -15%;
+	transition: 0.3s;
+}
+
+.special img
+{
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px)   {
+    
+	.container
+	{
+		width: 86%;
+		margin-left: 7%;
+		margin-right: 7%;
+
+	}
+
+    .item
+    {
+    	width: 48%;
+    }
+    
+    .special
+    {
+    	width: 35%;
+    	top: -10%;
+    	left: -10%;
+    }
+
+    .text
+    {
+    	font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+	.container
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5vw;
+	}
+
+    .item
+    {
+    	width: 96%;
+    	margin: 2%;
+    }
+    
+    .special
+    {
+    	width: 40%;
+    	top: -15%;
+    	left: -15%;
+    }
+
+    .text
+    {
+    	font-size: 15vw;
+    }
+}
