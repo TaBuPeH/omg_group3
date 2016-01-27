@@ -1,0 +1,92 @@
+*
+{
+
+	margin:0;
+	padding:0;
+}
+
+body{
+
+
+	background-image: url("images.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 80%;
+}
+
+
+#max
+{
+	width:70%;
+	background-color: #A52A2A;
+	margin-top:2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	float: left;
+}
+
+.container
+{	
+
+	position: relative;
+	float:left;
+	width: 31.33%;
+	margin: 1%;
+
+
+}
+.container img
+{
+	width: 100%;
+	float: left;
+}
+#sticker
+{
+
+	width:35%;
+	position: absolute;
+	top:-20%;
+	right: 82%;
+}
+.text
+{
+	
+	font-weight: bold;
+	color:white;
+	font-family: monotype corsiva;
+	text-align: center;
+	font-size: 1.5vw;
+
+}
+@media screen and (max-width: 1024px)   {
+    
+    #max
+    {
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+    
+    .container
+    {
+    	width: 48%;
+    }
+    
+    
+	
+	.container .text
+	{
+		font-size: 4vw;
+	}
+}
+
+
+@media screen and (max-width: 640px)   {
+    
+    .container
+    {
+    	width: 90%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    }
+}

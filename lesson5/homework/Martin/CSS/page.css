@@ -1,0 +1,117 @@
+body,
+html
+{
+	margin: 0px;
+	padding: 0px;
+
+	background-image: url(../Pics/wallpaper.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 80%;
+}
+
+.content
+{
+	width: 70%;
+	background-color: green;
+	margin: 0px 15% 0px 15%;
+	float:left;
+	margin-top: 15px;
+}
+
+.item
+{
+	width: 31.333%;
+	float: left;
+	margin:  1%;
+	position: relative;
+}
+
+.image
+{
+	width: 100%;
+}
+
+.image img
+{
+	width: 100%;
+}
+
+ .offer
+{
+	position: absolute;
+	width: 30%;
+	top: -10%;
+	left: -10%;
+}
+
+.offer img
+{
+	width: 100%;
+}
+
+.name
+{
+	position: absolute;
+	bottom: 0%;
+	left: 0px;
+	font-size: 20px;
+	font-family: "Calibri";
+	color: #fff;
+}
+
+.name:hover
+{
+	background-color: #BE0B0B;
+}
+.name:active
+{
+	background-color: #0000FF;
+}
+
+
+@media screen and (max-width: 1024px)   {
+    
+    .content
+    {
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+    
+    .item
+    {
+    	width: 48%;
+    }
+    
+    body,
+	html
+	{
+		font-size: 14px;
+	}
+	
+	.item .name
+	{
+		font-size: 3vw;
+	}
+}
+
+@media screen and (max-width: 640px)   {
+    
+    .content
+    {
+    	width: 90%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    }
+    
+    .item
+    {
+    	width: 98%;
+    }
+    
+    .item .name
+	{
+		font-size: 6vw;
+	}
+}

@@ -1,0 +1,105 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("picture.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+#mainDiv {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: crimson;
+    float: left;
+}
+
+.container {
+    float: left;
+    width: 31.3%;
+    margin: 1%;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+}
+
+.description {
+    color: #ea1409;
+    font-size: 3vw;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+#sticker {
+    position: absolute;
+    left: -13%;
+    top: -13%;
+    width: 30%;
+}
+
+#sticker img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+    #mainDiv {
+        width: 80%;
+        margin: 2% 10%;
+    }
+
+    .container {
+        width: 48%;
+    }
+
+    .description {
+        font-size: 4vw;
+    }
+
+    #sticker {
+
+        left: -10%;
+        top: -10%;
+        width: 30%;
+    }
+
+    
+}
+
+@media screen and (max-width: 640px) {
+
+
+    #mainDiv {
+        width: 94%;
+        margin: 2% 3%;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    .description {
+        font-size: 6vw;
+    }
+
+    #sticker {
+
+        left: -5%;
+        top: -5%;
+        width: 30%;
+    }
+
+
+}
+
