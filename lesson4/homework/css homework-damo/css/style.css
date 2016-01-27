@@ -1,0 +1,22 @@
+body, html{
+	padding: 0%;
+	margin: 0%;
+	background-color: lightgray;
+
+}
+.content{
+	margin: 0px 25% 0px 25%;
+	width: 50%;
+	float: left;
+	background-color: darkgray;
+}
+.image{
+	width: 100%;
+}
+.image img{
+	width: 100%;
+}
+.item{
+	width: 25%;
+	float: left;
+}
