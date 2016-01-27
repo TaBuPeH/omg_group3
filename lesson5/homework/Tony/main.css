@@ -1,0 +1,101 @@
+body,
+html
+{
+	margin: 0px;
+	padding: 0px;
+	
+	background-image: url(back.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 80%;
+}
+.content
+{
+	width: 70%;
+	background-color: orange;
+	float: left;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 1vw;
+}
+
+.item
+{	
+	width: 31.333%;
+	float: left;
+	margin: 1%;
+	position: relative; 
+}
+
+.image img, .image
+{
+	width: 100%;
+	float: left;
+}
+
+.name
+{
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	font-size: 30px;
+}
+
+.offer
+{
+	position: absolute;
+	width: 30%; 
+	top: -10%;
+	left: -10%;
+}
+
+.offer img
+{
+	width: 50%;
+}
+@media screen and (max-width: 1024px)   {
+    
+    .content
+    {
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+    
+    .item
+    {
+    	width: 48%;
+    }
+    
+    body,
+	html
+	{
+		font-size: 14px;
+	}
+	
+	.item .name
+	{
+		font-size: 3vw;
+	}
+}
+
+
+@media screen and (max-width: 640px)   {
+    
+    .content
+    {
+    	width: 90%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    }
+    
+    .item
+    {
+    	width: 98%;
+    }
+    
+    .item .name
+	{
+		font-size: 6vw;
+	}
+}
