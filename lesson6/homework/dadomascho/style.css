@@ -130,10 +130,8 @@ header
 	position: relative;
 	left: 3.2%;
 }
-div.icons img: nth-of type(1)
-{
 
-}
+
 section
 {
 	width: 100%;
@@ -196,16 +194,16 @@ section .columns .column
 	
 }
 
-.topColImage
+#topColImage
 {
 	width: 100%;
 	text-align: center;
 	position: relative;
 }
 
-.topColImage img
+#topColImage img
 {
-	width: 27%;
+	width: 27% ;
 	
 }
 
@@ -214,17 +212,7 @@ section .columns .column
 	margin-bottom: 6%;
 }
 
-.Line
-{
-	width: 73.5%;
-	position: absolute;
-	top: 32%;
-	left: 62.5%;
-}
-.Line img
-{
-	width: 100%;
-}
+
 .textInfo span
 {
 	color: #91c5a9;
@@ -239,7 +227,7 @@ section .columns .column
 .column .textInfo span {
     color: #91c5a9;
     font-size: 3.3vw;
-    font-family: Calibri;
+  
     font-weight: bold;
     margin-right: 2%;
 }
@@ -255,6 +243,8 @@ section .columns .column
 
 	width: 91%;
 	border-bottom: solid 4px #91c5a9;
+	position: relative;
+	right: -4%;
 
 }
 
@@ -265,7 +255,7 @@ section .columns .column
 	font-size: 1vw;
 	padding: 2% 1%;
 	margin: 0 auto;
-	font-family: Calibri;
+	
 }
 
 .profiles .staff_info {
@@ -273,7 +263,7 @@ section .columns .column
 	margin: 4% auto;
 	text-align: left;
 	font-size: 0.77vw;
-	font-family: Calibri;
+	
 	
 }
 
@@ -323,4 +313,260 @@ section .columns .column
 	font-family: Calibri;
 	text-transform: uppercase;
 
+}
+.PurpleCont p
+{		
+	text-align: left;
+	font-size: 0.86vw;
+	padding-bottom: 15%;
+}
+.PurpleCont h3
+{
+	font-size: 1.5vw;
+	font-weight: bold;
+	padding-bottom: 2%;
+}
+.PurpleCont
+{
+	width: 44%;
+	float: left;
+	margin-top: 6%;
+	padding-right: 5%;
+}
+.PurpleCont img
+{
+	width: 100%;
+}
+.PurpleCont a
+{
+	padding: 1.5% 7% 1.5% 7% ;
+	border: 2px solid white;
+	text-decoration: none;
+}
+.PurpleCont a:hover
+{
+	background-color: #9780bb;
+	transition: 0.3s;
+}
+.greenBottom .mainContent img
+{
+	width: 2%;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#heart {
+	width: 1.79%;
+}
+
+#commentProfile {
+	float: left;
+	width: 20%;
+
+}
+
+#commentProfile .Dancho{
+	width: 100%;
+}
+
+.comment {
+	width: 78%;
+	float: left;
+	font-family: Calibri;
+	font-size: 1.4vw;
+	line-height: 150%;
+	padding-left: 2%;
+	padding-top: 3%;
+	position: relative;
+}
+
+.comment .quote_name {
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 1vw;
+	font-style: italic;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	padding-right: 2%;
+	color: #8871ae;
+	font-weight: bold;
+}
+
+#leftArrow {
+	position: absolute;
+	top: 8%;
+	left: 0;
+	width: 3%;
+}
+
+#rightArrow {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 3%;
+}
+#dots img
+{
+	width: 80%;
+}
+#dots
+{
+	position: absolute;
+	bottom: -88%;
+	right: 50%;
+	margin-bottom: 4%;
+
+}
+.Manycolors img
+{
+	 width:78%;
+}
+.Manycolors
+{
+	position: absolute;
+	left: 12%;
+}
+#Portfolio nav
+{
+	text-align: center;
+}
+#Portfolio nav a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right:0.6%;
+
+	font-weight: bold; 
+	font-size: 1vw;
+}
+#Portfolio nav a:hover {
+	border-bottom: solid 2px #91C5A9;
+}
+.GalImg img
+{
+	width: 100%;
+}
+.GalImg
+{
+	width: 25%;
+	float: left;
+}
+.Gallery
+{
+	margin-top: 5%;
+	padding: 0%;
+
+}
+#Portfolio .Gallery div
+{
+	margin-bottom: -0.3% ;
+
+}
+footer
+{
+	background-color: #91c5a9;
+	width: 100%;
+	float:left;
+}
+
+.mainContentFooter
+{
+	width: 65%;
+	margin: 3% 17.5% 2.5% 17.5%;
+	float:left;
+}
+
+.footerI
+{
+	width: 21%;
+	margin: 0px 2%;
+	float:left;
+}
+
+.footerI h3
+{
+	font-size: 1.8vw;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 8%;
+}
+
+.footerI p
+{
+	text-align: center;
+	font-size: 1vw;
+	color: #fff;
+}
+
+.footerI a
+{
+	
+	float: left;
+	color: #fff;
+	text-decoration: none;
+	padding: 2% 3%;
+	background-color: #419568;
+	margin: 2%;
+	font-size: 0.95vw;
+}
+
+
+
+.footerI input[type="text"]
+{
+	width: 55%;
+	margin-bottom: 3%;
+	font-size: 0.8vw;
+	float: right;
+}
+
+.footerI textarea
+{
+	width: 55%;
+	float: right;
+	font-size: 0.9vw;
+	resize: none;
+
+}
+
+.footerI  label
+{
+	font-size: 1.2vw;
+	float: left;
+	margin-top: 2%;
+	color: #fff;
+}
+
+.group
+{
+	width: 90%;
+	float: left;
+}
+
+
+.Dask {
+	background-color: #54865d;
+	float: left;
+	width: 100%;
+	color: #fff;
+	
+	padding: 1.5% 0;
+	font-size: 0.9vw;
+}
+.Dask nav a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 4%;
+
+}
+.Dask div{
+	float: left;
+	width: 33.5%;
+	padding-left: 14.5%;
+}
+
+.Dask nav {
+	padding-left: 11%;
+	float: left;
+	width: 39%;
 }
