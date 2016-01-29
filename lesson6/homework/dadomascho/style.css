@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header
+{
+	
+	width: 100%;
+}
+
+.topCarousel
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.topCarousel img
+{
+	width: 100%;
+}
+
+
+.topLine
+{
+	width: 100%;
+	background-color: rgba(119,91,163,0.6);
+	position: absolute;
+	float: left;
+}
+
+.mainContent
+{
+	width: 65%;
+	margin: 0px 17.5%;
+}
+.logo
+{
+	float: left;
+	width: 21.367%;
+	margin-top: 0.2%;
+	margin-bottom: 1.05%;
+}
+
+.logo img
+{
+	width: 61%;
+}
+
+
+.topLine nav
+{
+	float: left;
+	display: block;
+	width: 57.266%;
+}
+
+.topLine nav a {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 1.1vw;
+    padding: 3.9% 1%;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #444;
+    text-transform: uppercase;
+    margin: 0px 1%;
+}
+
+.topLine nav a:hover
+{
+	border-bottom: 1px solid #f8e1b4; 
+}
+
+.icons img
+{	
+	width: 4.1%;
+	float: right;
+	margin-left: 2.5%;
+	margin-top:1%;
+	position: relative;
+	left: 3.2%;
+}
+div.icons img: nth-of type(1)
+{
+
+}
+section
+{
+	width: 100%;
+	display: block;
+	padding: 5% 0%;	
+	float: left;
+}
+
+
+section.greenBottom
+{
+	border-bottom: 1px solid #91c5a9;
+}
+
+section.greyBack
+{
+	background-color: #fcfcfc;
+}
+
+section.purpleBack
+{
+	background-color: #775ba3;
+}
+
+section.purpleBack *
+{
+	color: #fff;
+}
+
+section h2
+{
+	color: #775ba3;
+	font-size: 2.1vw;	
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+section p
+{
+	margin-top: 2vw;
+	display: block;
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 150%;
+}
+
+section .columns
+{
+	width: 100%;
+	float: left;
+
+
+}
+
+section .columns .column
+{
+	width: 33.3%;
+	float: left;
+	
+}
+
+.topColImage
+{
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.topColImage img
+{
+	width: 27%;
+	
+}
+
+.mainContent h2
+{
+	margin-bottom: 6%;
+}
+
+.Line
+{
+	width: 73.5%;
+	position: absolute;
+	top: 32%;
+	left: 62.5%;
+}
+.Line img
+{
+	width: 100%;
+}
+.textInfo span
+{
+	color: #91c5a9;
+	
+
+}
+
+.textInfo
+{
+	margin-left: 4%;
+}
+.column .textInfo span {
+    color: #91c5a9;
+    font-size: 3.3vw;
+    font-family: Calibri;
+    font-weight: bold;
+    margin-right: 2%;
+}
+.column .textInfo {
+    font-size: 0.9vw;
+    line-height: 150%;
+    text-align: center;
+    padding: 20% 1.8% 0 1.8%;
+}
+
+
+.topColImage .profilePicture {
+
+	width: 91%;
+	border-bottom: solid 4px #91c5a9;
+
+}
+
+.profiles .staff_name{
+	width: 89%;
+	border-bottom: solid 4px #91c5a9;
+	color: #91c5a9;
+	font-size: 1vw;
+	padding: 2% 1%;
+	margin: 0 auto;
+	font-family: Calibri;
+}
+
+.profiles .staff_info {
+	width: 91%;
+	margin: 4% auto;
+	text-align: left;
+	font-size: 0.77vw;
+	font-family: Calibri;
+	
+}
+
+.social_media_links {
+
+	width: 91%;
+	margin: 2% 4.5% 0 4.5%;
+	float: left;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0.7px #444;
+
+}
+
+.social_media_link {
+	float: left;
+	width: 46%;
+	text-align: center;
+	padding: 2%;
+}
+
+.social_media_link img {
+	width: 25%;
+}
+
+.facebook_link {
+	background-color: #3b5998;
+}
+
+.google_link {
+	background-color: #d14333;
+}
+
+.basketball_link {
+	background-color: #ea4c88;
+}
+
+.twitter_link {
+	background-color: #00aced;
+}
+
+.youTube_link {
+	background-color: #c70c0c;
+}
+
+.uppercase {
+	font-weight: bold;
+	font-family: Calibri;
+	text-transform: uppercase;
+
+}
