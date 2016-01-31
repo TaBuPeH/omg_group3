@@ -238,13 +238,13 @@ section .columns .column
 .topColImage .profilePicture {
 
 	width: 91%;
-	border-bottom: solid 4px #91c5a9;
+	border-bottom: solid 0.2vw #91c5a9;
 
 }
 
 .profiles .staff_name{
 	width: 89%;
-	border-bottom: solid 4px #91c5a9;
+	border-bottom: solid 0.26vw #91c5a9;
 	color: #91c5a9;
 	font-size: 1vw;
 	padding: 2% 1%;
@@ -358,7 +358,7 @@ section .columns .column
 	text-decoration: none;
 	font-size: 1vw;
 	font-weight: bold;
-	border: solid 4px white;
+	border: solid 0.35vw white;
 	width: 29%;
 	margin: 8% auto 0 0;
 	text-align: center;
@@ -579,6 +579,7 @@ footer {
 	padding-left: 4%;
 	padding-right: 5%;
 	padding-top: 2.6%;
+	font-size: 1vw;
 
 }
 
