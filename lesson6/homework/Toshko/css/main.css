@@ -1,0 +1,636 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+section {
+	background-color: #fff;
+}
+
+section.purpleBack h2 {
+	background-color: #775ba3;
+}
+
+header
+{	
+	width: 100%;
+}
+
+.topCarousel
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.topCarousel img
+{
+	width: 100%;
+}
+
+
+.topLine
+{
+	width: 100%;
+	background-color: rgba(119,91,163,0.6);
+	position: absolute;
+	float: left;
+}
+
+.mainContent
+{
+	width: 65%;
+	margin: 0px 17.5%;
+	background-color: #fff;
+}
+.logo
+{
+	float: left;
+	width: 21.367%;
+	margin-top: 0.2%;
+	margin-bottom: 1.05%;
+}
+
+.logo img
+{
+	width: 61%;
+}
+
+.loginButtons
+{
+	float: left;
+	width: 14%;
+	margin: 2.04% 0px 1.1% 7%;
+}
+
+.loginImage
+{
+	float: left;
+	margin: 0 9%;
+    width: 14.333%;
+}
+
+#circle
+{
+	width: 10.333%;
+}
+
+.loginImage img
+{
+	width: 100%;
+}
+
+.topLine nav
+{
+	float: left;
+	display: block;
+	width: 57.266%;
+}
+
+.topLine nav a {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 1.1vw;
+    padding: 3.9% 1%;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #444;
+    text-transform: uppercase;
+    margin: 0px 1%;
+}
+
+.topLine nav a:hover
+{
+	border-bottom: 2px solid #f8e1b4; 
+	transition: 0.05s;
+}
+
+
+section
+{
+	width: 100%;
+	display: block;
+	padding: 5% 0%;	
+	float: left;
+}
+
+
+section.greenBottom
+{
+	border-bottom: 1px solid #91c5a9;
+}
+
+section.greyBack
+{
+	background-color: #fcfcfc;
+}
+
+section.purpleBack
+{
+	background-color: #775ba3;
+}
+
+section.purpleBack *
+{
+	color: #fff;
+}
+
+section h2
+{
+	color: #775ba3;
+	font-size: 2.1vw;	
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+section:first-of-type p
+{
+	margin-top: 2vw;
+	display: block;
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 150%;
+}
+
+section .columns
+{
+	width: 100%;
+	float: left;
+	margin-top: 3%;
+	position: relative;
+}
+
+section .columns .column
+{
+	width: 33.3%;
+	float: left;
+}
+
+.topColImage
+{
+	width: 100%;
+	text-align: center;
+}
+
+.topColImage img
+{
+	width: 27%;
+}
+
+.dash_1
+{
+	position: absolute;
+	top: 12%;
+	right: 54.8%;
+	width: 24%;
+}
+
+.dash_2
+{
+	position: absolute;
+	top: 12%;
+	right: 21%;
+	width: 24.4%;
+}
+
+.dash_1 img, .dash_2 img
+{
+	width: 100%;
+}
+
+section .columns .column p
+{
+	margin: 5%;
+	text-align: center;
+	font-size: 1vw;
+	color: #4b3f55;
+}
+
+span.headNumber
+{
+	font-size: 2.5vw;
+	color: #91c5a9;
+}
+
+section .columns .column_2
+{
+	width: 29.333%;
+	margin: 0px 2%;
+	float: left;
+}
+
+.faceImage
+{
+	width: 100%;
+}
+
+.faceImage img
+{
+	border-bottom: 2px solid #91c5a9;
+	width: 100%;
+}
+
+section .columns .column_2 .firstP
+{
+	font-size: 1.2vw;
+	color: #91c5a9;
+	border-bottom: 2px solid #91c5a9;
+	padding: 2% 0px;
+}
+
+section .columns .column_2 span
+{
+	font-size: 0.85vw;
+}
+
+section .columns .column_2 .secondP
+{
+	font-size: 1vw;
+	color: #4b3f55;
+	margin-top: 6%;
+	margin-bottom: 10%;
+}
+
+.logoContent
+{
+	width: 100%;
+	float: left;
+}
+
+.logoContent .imageLogo
+{
+	width: 50%;
+	float: left;
+}
+
+.logoContent .imageLogo img
+{
+	width: 100%;
+}
+
+.contentPurple
+{
+	width: 100%;
+}
+
+.contentPurple .purple
+{
+	width: 50%;
+	float: left;
+	margin-top: 5%;
+}
+
+.contentPurple .purple h3
+{
+	margin: 2% 0px;
+	font-size: 2vw;
+}
+
+.contentPurple .purple p
+{
+	margin: 10% 0px;
+	font-size: 1vw;
+}
+
+.contentPurple .purple a
+{
+	width: 15%;
+	text-align: center;
+	padding: 2% 10%;
+	font-size: 1.2vw;
+	display: block;
+	border: 3px solid #fff;
+}
+
+.contentPurple .purple a:hover
+{
+	background-color: #9780bb;
+	transition: 0.3s;
+}
+
+.contentPurple .purple img
+{
+	width: 100%;
+}
+
+#littleToTheLeft
+{
+	margin-left: 5%;
+	width: 45%;
+}
+
+h2 img
+{
+	width: 2.5%;
+}
+
+.whatsTheBuzz
+{
+	width: 100%;	
+	float: left;
+}
+
+.circleMan
+{
+	float: left;
+	width: 17%;
+}
+
+.circleMan img
+{
+	width: 100%;
+}
+
+.textNextToCircle
+{
+	float: left;
+	margin: 2% 0px 8.5% 1%;
+	width: 82%;
+	position: relative;
+}
+
+.textNextToCircle p:nth-of-type(1)
+{
+	line-height: 1.3;
+	font-size: 1.5vw;
+}
+
+.textNextToCircle p:nth-of-type(2)
+{
+	font-size: 1.2vw;
+	position: absolute;
+	right: 3%;
+	top: 150%;
+	color: #7e63a8;
+}
+
+.textNextToCircle img:nth-of-type(1)
+{
+	position: absolute;
+	width: 5%;
+	top: -50%;
+	left: -5%;
+}
+
+.textNextToCircle img:nth-of-type(2)
+{
+	position: absolute;
+	width: 5%;
+	bottom: -150%;
+	right: -2%;
+}
+
+.galleryNav
+{
+	width: 43%;
+	margin: 0px 28.5%;
+	float: left;
+}
+
+.galleryNav a
+{
+	float: left;
+	font-size: 0.9vw;
+	display: block;
+	color: #7e63a8;
+	font-weight: bold;
+	margin: 0px 4.4%;
+	padding-bottom: 1.5%; 
+	margin-bottom: 2px;
+}
+
+.galleryNav a:hover
+{
+	border-bottom: 2px solid #91c5a9; 
+	margin-bottom: 0px;
+	transition: 0.05s;
+}
+
+.gallery
+{
+	width: 100%;
+	float: left;
+	margin-top: 6%;
+}
+
+.gallery .galleryImage
+{
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.gallery .galleryImage img
+{
+	width: 100%;
+}
+
+.gallery .galleryImage .galleryHover
+{
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	top: 0px;
+	left: 0px
+}
+
+.galleryImage:hover .galleryHover
+{
+	opacity: 1;	
+	transition: 0.3s;
+}
+
+#gallery
+{
+	position: relative;
+}
+
+#palitra
+{
+	position: absolute;
+	width: 15%;
+	top: 0px;
+	left: -12%;
+}
+
+footer
+{
+	background-color: #91c5a9;
+	width: 100%;
+	float:left;
+}
+
+.mainContentFooter
+{
+	width: 65%;
+	margin: 3% 17.5% 2.5% 17.5%;
+	float:left;
+}
+
+.footerItem
+{
+	width: 21%;
+	margin: 0px 2%;
+	float:left;
+}
+
+.footerItem h3
+{
+	font-size: 1.8vw;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 8%;
+}
+
+.footerItem p
+{
+	font-size: 1vw;
+	color: #fff;
+}
+
+.footerItem a
+{
+	display: block;
+	float: left;
+	color: #fff;
+	text-decoration: none;
+	padding: 2% 3%;
+	background-color: #419568;
+	margin: 2%;
+	font-size: 0.95vw;
+}
+
+.footerItem a:hover
+{
+	background-color: #61de9b;
+	transition: 0.3s;
+}
+
+.footerItem input[type="text"]
+{
+	width: 55%;
+	margin-bottom: 3%;
+	font-size: 0.8vw;
+	float: right;
+}
+
+.footerItem textarea
+{
+	width: 55%;
+	float: right;
+	font-size: 0.9vw;
+	resize: none;
+}
+
+.footerItem label
+{
+	font-size: 1.2vw;
+	float: left;
+	margin-top: 2%;
+}
+
+.group
+{
+	width: 100%;
+	float: left;
+}
+
+.footerItem:last-of-type p
+{
+	font-size: 1vw;
+	color: #fff;
+	text-align: center;
+}
+
+.mainContentDownFooter
+{
+	width: 65%;
+	margin: 0px 17.5%;
+	float: left;
+}
+
+.downFooter
+{
+	width: 100%;
+	background-color: #54865d;
+	float: left;
+}
+
+.downFooterItem_1
+{
+	float: left;
+	margin-left: 2%;
+	margin: 2.3% 0px;
+	color: #fff;
+	font-size: 1vw;
+	width: 54%;
+}
+
+.downFooterItem_2
+{
+	float: right;
+	margin-right: 2%;
+	margin: 2% 0px;
+	width: 42%;
+}
+
+.downFooterItem_2 a
+{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0px 2%;
+	font-size: 0.8vw;
+}

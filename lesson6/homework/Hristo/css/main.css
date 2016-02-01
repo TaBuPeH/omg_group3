@@ -1,0 +1,651 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header
+{
+	
+	width: 100%;
+}
+
+.topCarousel
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.topCarousel img
+{
+	width: 100%;
+}
+
+
+.topLine
+{
+	width: 100%;
+	background-color: rgba(119,91,163,0.6);
+	position: absolute;
+	float: left;
+}
+
+.mainContent
+{
+	width: 65%;
+	margin: 0px 17.5%;
+
+}
+.logo
+{
+	float: left;
+	width: 21.367%;
+	margin-top: 0.2%;
+	margin-bottom: 1.05%;
+}
+
+.logo img
+{
+	width: 61%;
+}
+
+.loginButtons
+{
+	float: left;
+	width: 21.367%;
+}
+.topLine nav
+{
+	float: left;
+	display: block;
+	width: 57.266%;
+}
+
+.topLine nav a {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 0.9vw;
+    padding: 4% 1%;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #444;
+    text-transform: uppercase;
+    margin: 0px 1%;
+}
+
+.topLine nav a:hover
+{
+	border-bottom: 2px solid #f8e1b4;
+}
+
+
+.topLine .loginButtons {
+	padding-top: 1%;
+}
+
+.topLine .loginButtons img {
+	width: 20%;
+	float: right;
+	margin-left: 3%;
+
+}
+
+
+section
+{
+	width: 100%;
+	display: block;
+	padding: 5% 0%;	
+	float: left;
+}
+
+
+section.greenBottom
+{
+	border-bottom: 1px solid #91c5a9;
+}
+
+section.greyBack
+{
+	background-color: #fcfcfc;
+}
+
+section.purpleBack
+{
+	background-color: #775ba3;
+}
+
+section.purpleBack *
+{
+	color: #fff;
+}
+
+section h2
+{
+	color: #775ba3;
+	font-size: 2.1vw;	
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+section p
+{
+	margin-top: 2vw;
+	display: block;
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 150%;
+}
+
+section .columns
+{
+	width: 100%;
+	float: left;
+
+}
+
+section .columns .column
+{
+	width: 33.3%;
+	float: left;
+	
+}
+
+.topColImage
+{
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.topColImage img
+{
+	width: 27%;	
+}
+
+.dashedLine {
+    position: absolute;
+    width:73% !important;
+    top: 5%;
+}
+
+
+.column .textInfo {
+    font-size: 0.9vw;
+    line-height: 150%;
+    text-align: center;
+    padding: 20% 1.8% 0 1.8%;
+}
+.column .textInfo span {
+    color: #91c5a9;
+    font-size: 3.3vw;
+    font-family: Calibri;
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+
+
+.topColImage .profilePicture {
+
+	width: 91%;
+	border-bottom: solid 0.2vw #91c5a9;
+
+}
+
+.profiles .staff_name{
+	width: 89%;
+	border-bottom: solid 0.26vw #91c5a9;
+	color: #91c5a9;
+	font-size: 1vw;
+	padding: 2% 1%;
+	margin: 0 auto;
+	font-family: Calibri;
+}
+
+.profiles .staff_info {
+	width: 91%;
+	margin: 4% auto;
+	text-align: left;
+	font-size: 0.77vw;
+	font-family: Calibri;
+	box-sizing: border-box;
+}
+
+.social_media_links {
+
+	width: 91%;
+	margin: 2% 4.5% 0 4.5%;
+	float: left;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0.7px #444;
+
+}
+
+.social_media_link {
+	float: left;
+	width: 46%;
+	text-align: center;
+	padding: 2%;
+}
+
+.social_media_link img {
+	width: 25%;
+}
+
+.facebook_link {
+	background-color: #3b5998;
+}
+
+.google_link {
+	background-color: #d14333;
+}
+
+.basketball_link {
+	background-color: #ea4c88;
+}
+
+.twitter_link {
+	background-color: #00aced;
+}
+
+.youTube_link {
+	background-color: #c70c0c;
+}
+
+.uppercase {
+	font-weight: bold;
+	font-family: Calibri;
+	text-transform: uppercase;
+
+}
+
+.purpleBack .content {
+	float:  left;
+	width: 50%;
+	font-family: Calibri;
+	position: relative;
+}
+
+.purpleBack .content img {
+	width: 98%;
+}
+
+.purpleBack .content:nth-of-type(1),.purpleBack .content:nth-of-type(2) {
+	margin-top: 6%;
+}
+
+.purpleBack .content:nth-of-type(2)  {
+	text-align: right;
+}
+
+.purpleBack .content:nth-of-type(3)  {
+	text-align: left;
+}
+
+.purpleBack .content h3 {
+	width: 45%;
+	font-size: 1.9vw;
+	line-height: 130%;
+	font-weight: bold;
+	text-align: left;
+	margin-right: auto;
+	margin-left: 0;
+
+}
+
+.purpleBack .content p {
+	width: 96%;
+	margin-right: auto;
+	margin-left: 0;
+	text-align: left;
+	font-size: 0.9vw;
+	margin-top: 5%;
+	line-height: 130%;
+}
+
+.purpleBack .content a{
+
+	text-decoration: none;
+	font-size: 1vw;
+	font-weight: bold;
+	border: solid 0.35vw white;
+	width: 29%;
+	margin: 8% auto 0 0;
+	text-align: center;
+	padding: 1.8% 4% 2% 4%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.purpleBack .content a:hover {
+	color: #775BA3;
+	background-color: #fff;
+	transition: 0.3s;
+}
+
+.purpleBack .content:nth-of-type(3),.purpleBack .content:nth-of-type(4) {
+
+	margin-top: 4%;
+
+}
+
+.purpleBack .content:nth-of-type(4) {
+
+	padding-top: 3%;
+	padding-left: 2%;
+	width: 48%;
+
+}
+
+
+
+
+#heart {
+	width: 1.79%;
+}
+
+.commentProfile {
+	float: left;
+	width: 20%;
+}
+
+.commentProfile img{
+	width: 100%;
+}
+
+.comment {
+	width: 78%;
+	float: left;
+	font-family: Calibri;
+	font-size: 1.6vw;
+	line-height: 150%;
+	padding-left: 2%;
+	padding-top: 3%;
+	position: relative;
+}
+
+.comment .quote_name {
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 1vw;
+	font-style: italic;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	padding-right: 2%;
+	color: #8871ae;
+}
+
+#leftArrow {
+	position: absolute;
+	top: 8%;
+	left: 0;
+	width: 3%;
+}
+
+#rightArrow {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 3%;
+}
+
+
+#portfolio {
+	position: relative;
+}
+#color_switch {
+	position: absolute;
+	left: 9%;
+	width: 9%;
+}
+
+#portfolio h2{
+	margin-bottom: 1.8%;
+}
+
+#portfolio nav{
+	text-align: center;
+}
+
+#portfolio nav a{
+
+	margin: 0 1.2%;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 1vw;
+	color: #775ba3;
+	text-decoration: none;
+
+}
+
+#portfolio nav a:hover {
+	border-bottom: solid 2px #91C5A9;
+}
+
+#portfolio .gallery {
+	margin-top: 5%;
+}
+
+
+#portfolio .gallery>div {
+
+	width: 25%;
+	float: left;
+	margin-bottom: -0.1%;
+	position: relative;
+
+}
+
+#portfolio .gallery>div img {
+	width: 100%;
+}
+
+
+.options {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 99%;
+	display: none;
+	background-color: rgba(248 , 225 , 180 , 0.7);
+}
+
+.gallery div:hover .options {
+	display: block;
+}
+
+#portfolio .gallery .buttons {
+	position: absolute;
+	top: 38%;
+	left: 27.5%;
+	width: 45%;
+	text-align: center;
+
+}
+
+#portfolio .gallery .buttons a{
+	text-align: center;
+	width: 47%;
+	margin: 0 1.5%;
+	background-color: #f98a5f;
+	float: left;
+	padding: 11% 0 10% 0;
+}
+
+#portfolio .gallery .buttons a img {
+	width: 45%;
+}
+
+
+footer {
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.upperFooter {
+	background-color: #91c5a9;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 100%;
+	display: block;
+	float: left;
+	color: #fff;
+	font-family: Calibri;
+}
+
+.upperFooter .content{
+	width: 25%;
+	float: left;  /*  REMOVE  */
+}
+
+.upperFooter h3 {
+	font-size: 1.6vw;
+	text-align: center;
+	margin-bottom: 6%;
+}
+
+.upperFooter .snippet p{
+	width: 95%;
+	padding-right: 5%;
+	text-align: start ;
+	font-size: 0.95vw;
+}
+.upperFooter .tags h3{
+
+ }
+.upperFooter .tags .tag{
+
+	background-color: #419568;
+	padding: 3% 5%;
+	margin: 2% 6% 3% 1%;
+	font-size: 0.8vw;
+	float: left;
+}
+
+.upperFooter .contact form{
+	width: 91%;
+	padding-left: 4%;
+	padding-right: 5%;
+	padding-top: 2.6%;
+	font-size: 1vw;
+
+}
+
+.upperFooter .contact form label{
+	width: 25%;
+	display: block;
+	float: left;
+	padding-top: 4%;
+	font-size: 0.9vw;
+}
+
+.upperFooter .contact form input{
+	width: 70%;
+	float: left;
+	display: block;
+	margin: 0 0 2% auto;
+	height: 1.4vw;
+}
+
+.upperFooter .contact form textarea {
+
+	display: block;
+	float: left;
+	width: 70%;
+	height: 5vw;
+}
+
+.upperFooter .tweeter p{
+	text-align: center;
+	width: 95%;
+	padding: 0 2.5% ;
+	font-size: 0.95vw;
+}
+
+.downFooter {
+	background-color: #54865d;
+	float: left;
+	width: 100%;
+	color: #fff;
+	font-family: Calibri;
+	padding: 1.5% 0;
+	font-size: 0.9vw;
+}
+
+.downFooter div{
+	float: left;
+	width: 33.5%;
+	padding-left: 16.5%;
+}
+
+.downFooter div span{
+	margin: 0 4% 0 1%;
+}
+
+.downFooter nav {
+	padding-left: 11%;
+	float: left;
+	width: 39%;
+}
+
+.downFooter nav a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 4%;
+
+}
+
+
