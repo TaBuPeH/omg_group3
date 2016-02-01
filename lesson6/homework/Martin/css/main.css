@@ -99,6 +99,7 @@ header
 	float: left;
 	width: 21.367%;
 }
+
 .topLine nav
 {
 	float: left;
@@ -125,6 +126,17 @@ header
 	border-bottom: 1px solid #f8e1b4; 
 }
 
+.topLine .loginButtons 
+{
+	padding-top: 1%;
+}
+
+.topLine .loginButtons img 
+{
+	width: 20%;
+	float: right;
+	margin-left: 3%;
+}
 
 section
 {
@@ -153,23 +165,6 @@ section.purpleBack
 section.purpleBack *
 {
 	color: #fff;
-}
-
-.loginButtons
-{
-	float: left;
-	width: 21.367%;
-}
-
-.topLine .loginButtons {
-	padding-top: 1%;
-}
-
-.topLine .loginButtons img {
-	width: 20%;
-	float: right;
-	margin-left: 3%;
-
 }
 
 section h2
