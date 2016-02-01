@@ -1,22 +1,55 @@
-body, html{
-	padding: 0%;
-	margin: 0%;
-	background-color: lightgray;
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: blue;
+}
+
+.content{
+	background-color: darkblue;
+	width: 60%;
+	margin: 0px 20% 0px 20%;
+	float: left;
 
 }
-.content{
-	margin: 0px 25% 0px 25%;
-	width: 50%;
+
+.item{
+	width: 23%;
 	float: left;
-	background-color: darkgray;
+	position: relative;
+	overflow: hidden;
+	margin: 1%;
 }
+
 .image{
 	width: 100%;
 }
+
 .image img{
 	width: 100%;
 }
-.item{
-	width: 25%;
-	float: left;
+
+.topOffer{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.topOffer img{
+	z-index: 600;
+	position: relative;
+}
+
+
+.whiteDiscount{
+	background-color: #be0b0b;
+    color: white;
+    font-weight: bold;
+    padding-top: 21px;
+    position: absolute;
+    right: -45px;
+    text-align: center;
+    top: -11px;
+    transform: rotate(40deg);
+    width: 70%;
+    z-index: 500;
 }
