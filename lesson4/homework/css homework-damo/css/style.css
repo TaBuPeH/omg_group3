@@ -41,12 +41,12 @@ html, body{
 
 
 .whiteDiscount{
- background-color: #be0b0b;
+	background-color: #be0b0b;
     color: white;
     font-weight: bold;
     padding-top: 21px;
     position: absolute;
-    right: -32px;
+    right: -45px;
     text-align: center;
     top: -11px;
     transform: rotate(40deg);
