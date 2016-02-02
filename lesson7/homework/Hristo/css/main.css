@@ -1,0 +1,16 @@
+
+
+.middle {
+    float: left;
+    width: 60%;
+    margin: 0 20%;
+    text-align: center;
+    background-color: azure;
+    padding: 2% 0;
+}
+
+button {
+    width: 20%;
+    height: 4vw;
+    margin: 0 2%;
+}
