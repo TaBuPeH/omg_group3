@@ -1,0 +1,15 @@
+#redDiv
+{
+	width: 100px;
+	height: 100px;
+	background-color: #F00;
+}
+
+.coolDivs
+{
+	width: 100px;
+	height: 100px;
+	background-color: #F00;
+	margin: 10px;
+	float: left;
+}
