@@ -1,0 +1,83 @@
+<html>
+	
+	<head>
+		
+		<link href='css/main.css' rel="stylesheet" />
+		
+	</head>
+	
+	
+	<body>
+		
+		<div id='mainDiv'>
+			
+			<div class='secondDiv'>
+				
+				<input type='button' value='Change This Value'>
+				<input type='button' value='Change This Value2'>
+				
+			</div>
+			
+		</div>
+		
+		<div id='marginContainer'>
+			
+			<div id='adjustThis'> sss</div>
+			
+		</div>
+		
+	</body>
+	
+	
+	<script>
+	
+	
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+			
+		
+		var ourButton = document.querySelector("div.secondDiv input");
+		
+		ourButton.addEventListener('click',function(){
+			
+			var ourRedDiv = document.getElementById('mainDiv');
+			ourRedDiv.style.backgroundColor = 'blue';
+		});
+		
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		/*document.getElementsByClassName();
+		document.getElementsByName();
+		document.getElementsByTagName();
+		*/
+		//document.querySelector();
+		//document.querySelectorAll();
+		
+		
+		var ourButton = document.querySelectorAll("div.secondDiv input");
+			// i=0 ; i<2 ; i++
+		for(i=0; i<ourButton.length; i++)
+		{
+			ourButton[i].style.width = '100%';
+			if(i==0)
+			{
+				ourButton[i].value = 'Baf';
+			}
+		}
+		//ourRedDiv.style.backgroundColor = 'blue';
+	</script>
+</html>
