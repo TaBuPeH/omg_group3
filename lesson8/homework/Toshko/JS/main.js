@@ -36,6 +36,7 @@ function reset()
 	document.getElementById('text_4').innerHTML = null;
 	document.getElementById('text_5').innerHTML = null;
 	document.getElementById('text_6').innerHTML = null;
+	index = 1;
 }
 
 function checkForRepeat()
