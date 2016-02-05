@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		
 
 
-		document.getElementById('text'+i+'').innerHTML = number;
+		document.getElementById('text'+i).innerHTML = number;
 		i++;
 
 	});
@@ -36,7 +36,7 @@ function resetNum()
 {
 	for(var i=1;i<=6;i++)
 	{
-		document.getElementById('text'+i+'').innerHTML = null;
+		document.getElementById('text'+i).innerHTML = null;
 	}
 	
 }
