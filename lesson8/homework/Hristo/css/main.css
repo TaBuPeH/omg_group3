@@ -24,11 +24,13 @@
 .resultBox {
 
     float: left;
-    width: 20%;
-    height: 5%;
-    border: 1px solid black;
+    width: 19%;
+    height: 7%;
+    border: 2px solid black;
+    background-color: #ffe96e;
     margin: 2% 6.58%;
     padding-top: 2%;
+    font-size: 2vw;
 
 }
 
