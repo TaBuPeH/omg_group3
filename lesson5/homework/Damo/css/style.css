@@ -1,0 +1,104 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: blue;
+}
+
+.content{
+	background-color: darkblue;
+	width: 60%;
+	margin: 0px 20% 0px 20%;
+	float: left;
+
+}
+
+.item .text{
+	font-size: 1.5vw;
+}
+
+.item{
+	width: 23%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 1%;
+}
+
+.image{
+	width: 100%;
+}
+
+.image img{
+	width: 100%;
+}
+
+.topOffer{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.topOffer img{
+	z-index: 600;
+	position: relative;
+}
+
+.whiteDiscount{
+ 	background-color: #be0b0b;
+    color: white;
+    font-weight: bold;
+    padding-top: 21px;
+    position: absolute;
+    right: -45px;
+    text-align: center;
+    top: -11px;
+    transform: rotate(40deg);
+    width: 70%;
+    z-index: 500;
+}
+
+@media screen and (max-width: 1024px){
+
+	.content{
+		width: 70%;
+		margin-right: 15%;
+		margin-left: 15%;
+	}
+
+	.item .text{
+	font-size: 2vw;
+}
+
+	.item{
+		width: 48%;
+
+	}
+
+	.whiteDiscount{
+		top: -11px;
+		right: -93px;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	.content{
+		width: 45%;
+		margin-right: 27.5%;
+		margin-left: 27.5%;
+	}
+
+	.item .text{
+	font-size: 3vw;
+}
+
+	.item{
+		width: 98%;
+
+	}
+
+	.whiteDiscount{
+		top: -9px;
+		right: -74px;
+	}
+}
