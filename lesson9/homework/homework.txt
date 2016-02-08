@@ -1,0 +1,7 @@
+Detect if the clicked circle is before the image currently shown
+
+If the circle Index is < than the element that is visible,
+fly the elements from left to right;
+
+Else - keep the current animation
+

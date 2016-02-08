@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Istok;
+    src: url(sansation_light.woff);
+}
+
+
+body.spring div
+{
+	
+}
+
+body.summer div
+{
+	
+}
+
+#mainDiv
+{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	font-family: Istok;
+}
+
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: red;
+}
+
+#yesBoss
+{
+	padding: 2%;
+	position:absolute;
+	top: 45%;
+	left: 40%;
+	font-size: 20px;
+}
+
+#noBoss
+{
+	padding: 2%;
+	position:absolute;
+	top: 45%;
+	left: 55%;
+	font-size: 20px;
+}
+
+#question
+{
+	position:absolute;
+	top: 35%;
+	left: 42%;
+	width: 20%;
+	color: #fff;
+	font-size: 30px;
+}
+
+#marginContainer
+{
+	width: 300px;
+	height: 100px;
+	background-color: #fff;
+}
+
+#adjustThis
+{
+	margin: 10%;
+}
