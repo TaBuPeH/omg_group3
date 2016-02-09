@@ -1,0 +1,56 @@
+body, html, div, img
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.gallery
+{
+	position:relative;
+	height: 37.5vw;
+	overflow: hidden;
+}
+.gallery img
+{
+	width: 100%;
+	position:absolute;
+	top: 0px;
+	left: 100%;
+	display: none;
+}
+
+.gallery img:first-of-type
+{
+	left: 0%;
+	display: block;
+}
+
+.circles
+{
+	float: left;
+	width: 12%;
+	margin: 0px 44%;
+	position: absolute;
+	bottom: 13%;
+	text-align: center;
+}
+
+.circle
+{
+	width: 1vw;
+	border-radius: 100%;
+	background-color: #fff;
+	transition: 0.3s;
+	border: solid 1px #a00;
+	height: 1vw;
+	display: block;
+	margin: 5% 11.5%;
+	cursor: pointer;
+	z-index: 100;
+	float: left;	
+}
+
+.circle:first-of-type
+{
+	background-color: #f00;
+}
