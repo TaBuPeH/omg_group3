@@ -1,0 +1,50 @@
+body, html
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.gallery
+{
+	position:relative;
+	height: 633px;
+	overflow: hidden;
+}
+.gallery img
+{
+	width: 100%;
+	position:absolute;
+	top: 0px;
+	left: 100%;
+	display: none;
+}
+
+.gallery img:first-of-type
+{
+	left: 0%;
+	display: block;
+}
+
+
+.circles {
+	position: absolute;
+	top: 87%;
+	left: 46.5%;
+}
+
+.circle
+{
+	width: 1vw;
+	border-radius: 50%;
+	border: grey solid 2px;
+	height: 1vw;
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.circle:hover {
+	background-color: grey;
+
+}
+
