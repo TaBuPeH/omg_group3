@@ -1,6 +1,12 @@
 var index;
 $(document).ready(function(){
 
+	$('.gallery img').each(function(){
+		
+		$('.circles').append('<div class="circle"></div>');
+		
+	});
+	
 	$('.circle').click(function(){
 
 		if ($(':animated').length || $('.gallery img:visible').index()  ==  $(this).index()) 
