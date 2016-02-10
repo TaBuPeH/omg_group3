@@ -1,0 +1,48 @@
+body, html
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.gallery
+{
+	position:relative;
+	height: 633px;
+	overflow: hidden;
+}
+.gallery img
+{
+	width: 100%;
+	position:absolute;
+	top: 0px;
+	left: 100%;
+	display: none;
+}
+
+.gallery img:first-of-type
+{
+	left: 0%;
+	display: block;	
+}
+
+.circles
+{
+	width: 12%;
+	margin: 0px 44%;
+	position: absolute;
+	bottom: 15%;
+	text-align: center;
+}
+
+.circle
+{
+	width: 1.2vw;
+	border-radius: 100%;
+	background-color: #000;
+	height: 1.2vw;
+	margin: 5% 11%;
+	cursor: pointer;
+	float: left;	
+} 
+
+
