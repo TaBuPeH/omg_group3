@@ -38,7 +38,10 @@ $(document).ready(function(){
 
     }
 
+
     $('.gallery img').click( autoChange);
+
+
 
     setInterval( autoChange, 5000 )
 
