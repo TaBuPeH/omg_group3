@@ -3,7 +3,7 @@
 	require_once("car.php");
 	require_once("truck.php");
 	require_once("taxi.php");
-	require_once("plane.php")
+	require_once("plane.php");
 	
 	$vehicle = new Vehicle(20,'red');
 	echo "<pre>";
