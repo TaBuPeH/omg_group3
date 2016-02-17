@@ -9,7 +9,7 @@
 						"Special abilities" => Array(
 							0 => "ninja",
 							1 => "can fly",
-							2 => "can do a 30 sign jutsu"
+							2 => "can do a 30 sign jutsu",
 						)
 					)
 				),
@@ -37,7 +37,7 @@
 						"Special abilities" => Array(
 							0 => "can go invisible",
 							1 => "can fly",
-							2 => "can speak"
+							2 => "can speak",
 						)
 					)
 				),
