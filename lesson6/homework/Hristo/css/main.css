@@ -58,7 +58,6 @@ header
 
 .topCarousel
 {
-	z-index: -1;
 	width: 100%;
 	float: left;
 	position: relative;
@@ -84,26 +83,23 @@ header
 	position: absolute;
 	top: 87%;
 	left: 46.5%;
-	z-index: 10;
+}
+
+.circles .circle:first-of-type
+{
+	background-color: grey;
 }
 
 .circle
 {
-	z-index: 10;
 	width: 1vw;
 	border-radius: 50%;
 	border: grey solid 2px;
 	height: 1vw;
 	float: left;
 	margin: 10px;
-	cursor: pointer;
+	cursor:  pointer;
 }
-
-.circle:hover {
-	background-color: grey;
-
-}
-
 
 .topLine
 {
@@ -111,6 +107,7 @@ header
 	background-color: rgba(119,91,163,0.6);
 	position: absolute;
 	float: left;
+	z-index: 69;
 }
 
 .mainContent

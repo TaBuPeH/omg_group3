@@ -38,9 +38,9 @@ $(document).ready(function(){
 
     }
 
-    //$('.gallery img').click( autoChange() );
+    $('.topCarousel img').click( autoChange );
 
-    setInterval( autoChange, 5000 )
+    setInterval( autoChange, 5000 );
 
     function animateFromRight( current , target ) {
 
@@ -70,12 +70,21 @@ $(document).ready(function(){
             });
             $('.topCarousel img').eq(target).css({display: "block", left: "-100%"});
             $('.topCarousel img').eq(target).animate({left: "0%"}, 1000);
-            $('.circles div').eq(target).addClass("current");
+        
             $('.circle').css({ background: "none" });
             $('.circles .circle').eq(target).css({ background: "grey" });
-
         }
-
     }
 
+    $(".circle").mouseover( function(){
+
+        $(this).css({ background: "grey" });
+
+    });
+
+    $(".circle").mouseout( function(){
+
+        $(this).css({ background: "none" });
+
+    });
 });
