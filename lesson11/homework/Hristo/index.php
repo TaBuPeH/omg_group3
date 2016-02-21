@@ -40,5 +40,5 @@
 
 	echo "<pre>";
 	print_r($videoteka);
-	echo "/<pre>";
+	echo "</pre>";
 ?>

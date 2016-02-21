@@ -25,7 +25,7 @@
 							7 => "Harry Potter and the Deathly Hallows"
 							)
 						)
-				)
+				),
 
 			2 => Array(
 				"name" => "A Song of Ice and Fire",
@@ -42,7 +42,7 @@
 							5 => "A Dance with Dragons"
 							)
 						)
-				)
+				),
 
 			3 => Array(
 				"name" => "The Chronicles of Narnia",
@@ -61,7 +61,7 @@
 							7 => "The Last Battle"
 							)
 						)
-				)
+				),
 
 			4 => Array(
 				"name" => "Percy Jackson & the Olympians",

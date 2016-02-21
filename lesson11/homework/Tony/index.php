@@ -10,7 +10,7 @@
 			    (
 
 					"brand" => "Alfa Romeo",
-					"model" => Giulietta,
+					"model" => "Giulietta",
 					"price" => "20 000",
 					"description" => Array
 					(
@@ -28,7 +28,7 @@
 			    (
 
 					"brand" => "Audi",
-					"model" => A3,
+					"model" => "A3",
 					"price" => "15 000",
 					"description" => Array
 					(
@@ -58,7 +58,8 @@
 									2 => "Seats - 5"
 						)
 					)
-				),
+				)
+		);
 					
 
 			echo "<pre>";
