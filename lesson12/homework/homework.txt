@@ -1,0 +1,7 @@
+use the car classes
+
+make functions to load / unload the truck
+
+make functions to load / unload passengers on car
+
+extend class vehicle with class Plane
