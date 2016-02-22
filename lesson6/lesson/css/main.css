@@ -260,14 +260,12 @@ section .columns .column
 	margin: 2px 35%;
 }
 
-.1stPostDudes{
-	width: 20%;
+.postsDudes:first-of-type{
+	width: 45%;
 	float: left;
-
 }
 
-.2ndPostDudes{
-	width: 20%;
+.postsDudes:nth-of-type(2) {
+	width: 55%;
 	float: left;
-
 }
