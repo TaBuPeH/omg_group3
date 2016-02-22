@@ -98,7 +98,19 @@ header
 {
 	float: left;
 	width: 21.367%;
+	padding-top: 2%;
 }
+
+.loginButtons a{
+	margin-left: 13%;
+
+}
+
+.loginButtons img{
+	width: 10%;
+
+}
+
 .topLine nav
 {
 	float: left;
@@ -224,3 +236,38 @@ section .columns .column
 	left: 0px;
 }
 
+.dudes{
+	float: left;
+	width: 20%;
+	position: relative;
+	left: 20%;
+	right: 20%;
+	margin: 1%;
+}
+
+.dudes img{
+	width: 100%;
+}
+
+.facebookLogo{
+	background-color: #3b5998;
+	width: 45%;
+	height: 10%;
+}
+
+.facebookLogo img{
+	width: 30%;
+	margin: 2px 35%;
+}
+
+.1stPostDudes{
+	width: 20%;
+	float: left;
+
+}
+
+.2ndPostDudes{
+	width: 20%;
+	float: left;
+
+}
