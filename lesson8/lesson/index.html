@@ -4,6 +4,45 @@
 		
 		<link href='css/main.css' rel="stylesheet" />
 		
+		<script>
+		
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			
+		
+			var ourDiv = document.querySelector('#mainDiv');
+			
+			ourDiv.addEventListener("mouseover", function(){
+				
+				ourDiv.style.backgroundColor = 'blue';
+				
+			} );
+			
+			ourDiv.addEventListener("mouseout", function(){
+				
+				ourDiv.style.backgroundColor = 'red';
+			});
+			
+
+			var inputs = document.querySelectorAll("body div.secondDiv input");
+			
+			for(i=0; i<inputs.length; i++)
+			{
+				inputs[i].value='baf';
+				inputs[i].addEventListener("click",function(){
+					
+					alert('baf');
+				});
+			}
+			
+			
+			
+			/* element */document.querySelector("body div.secondDiv input");
+			/* collection */document.querySelectorAll("body div.secondDiv input");
+			
+		});	
+			
+		</script>
+		
 	</head>
 	
 	
@@ -11,7 +50,7 @@
 		
 		<div id='mainDiv'>
 			
-			<div class='secondDiv'>
+			<div class='secondDiv' >
 				
 				<input type='button' value='Change This Value'>
 				<input type='button' value='Change This Value2'>
@@ -20,64 +59,9 @@
 			
 		</div>
 		
-		<div id='marginContainer'>
-			
-			<div id='adjustThis'> sss</div>
-			
-		</div>
+	
 		
 	</body>
 	
 	
-	<script>
-	
-	
-	
-	document.addEventListener("DOMContentLoaded", function(event) { 
-			
-		
-		var ourButton = document.querySelector("div.secondDiv input");
-		
-		ourButton.addEventListener('click',function(){
-			
-			var ourRedDiv = document.getElementById('mainDiv');
-			ourRedDiv.style.backgroundColor = 'blue';
-		});
-		
-	});
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
-		
-		/*document.getElementsByClassName();
-		document.getElementsByName();
-		document.getElementsByTagName();
-		*/
-		//document.querySelector();
-		//document.querySelectorAll();
-		
-		
-		var ourButton = document.querySelectorAll("div.secondDiv input");
-			// i=0 ; i<2 ; i++
-		for(i=0; i<ourButton.length; i++)
-		{
-			ourButton[i].style.width = '100%';
-			if(i==0)
-			{
-				ourButton[i].value = 'Baf';
-			}
-		}
-		//ourRedDiv.style.backgroundColor = 'blue';
-	</script>
 </html>
