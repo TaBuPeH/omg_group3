@@ -17,7 +17,5 @@ class Vehicle
 		$this->fuel = $this->fuel - $distance/10; 
 		$this->position = $this->position + $distance; 
 	}
-	
-
 }
 ?>

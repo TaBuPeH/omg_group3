@@ -4,8 +4,6 @@
 
 	class Plane extends Vehicle 
 	{
-
-		
 		public $model;
 		public $cap;
 

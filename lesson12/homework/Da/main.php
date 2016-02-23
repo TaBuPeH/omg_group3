@@ -20,7 +20,7 @@
 	
 	$truck = new Truck(50, 'Green');
 	$truck->loadTovar(600);
-	$truck->move(1000)
+	$truck->move(1000);
 	$truck->unloadTovar(200);
 	echo "<pre>";
 	print_r($truck);

@@ -9,17 +9,17 @@ require_once("vehicle.php");
 
 		public function loadTovar($crg)
 		{
-			$this->$tovar += $crg;
+			$this->tovar += $crg;
 		}
 
 		public function unloadTovar($crg)
 		{
-			if($this->$tovar - $crg < 0 )
+			if($this->tovar - $crg < 0 )
 			{
 				return;
 			}
 
-			$this->$tovar -= $crg;
+			$this->tovar -= $crg;
 		}
 	}
 
