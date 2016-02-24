@@ -1,0 +1,7 @@
+extend some of the class with anything you want 
+
+try to make the superattacks execute automatically on each 2nd atack
+
+find a winner in the battle (if health < 0 that creature loses )
+
+make the combatants and array and cycle them with While until Attacker1 or attacker2 wins.

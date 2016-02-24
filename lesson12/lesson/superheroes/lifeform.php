@@ -31,9 +31,10 @@ class lifeform
 			$this->setSpeed();
 		}
 		
-		
 	function setStat($statX,$value)
 	{
+		// $statX = 'strength'
+		// $this->strength = 100;
 		$this->{$statX} = $value;
 	}
 	

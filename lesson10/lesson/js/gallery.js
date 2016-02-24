@@ -23,22 +23,23 @@ $(document).ready(function(){
 	});
 	
 	
+
 	
 	function flyInFromRight(delay)
 	{
+		 delay = 200;
 		 var currentElement = $('.gallery img.active');
 		 
-		 
+		 currentElement.animate( {left: "0px", top: "15%", width: '35%'}, delay );
+		 currentElement.next().animate( {left: "25%", top: "0", width: "50%"}, delay);
+		 currentElement.next().next().animate( {left: "70%", top: "15%", width: "35%"}, delay);
+		 currentElement.prev().animate({width:'15%',top:'35%',left: "-15%"}, delay-50);
+	
 		 setTimeout(function(){ 
 			 currentElement.removeClass('active'); 
 			 currentElement.next().addClass('active'); 
 		 },delay/2 - 50);
 		 
-		 
-		 currentElement.prev().animate({width:'15%',top:'35%',left: "-15%"}, delay-50);
-		 currentElement.animate( {left: "0px", top: "15%", width: '35%'}, delay );
-		 currentElement.next().animate( {left: "25%", top: "0", width: "50%"}, delay);
-		 currentElement.next().next().animate( {left: "70%", top: "15%", width: "35%"}, delay);
 	}
 	
 	function flyInFromLeft(delay)
@@ -55,6 +56,9 @@ $(document).ready(function(){
 		 currentElement.prev().animate( {left: "25%", top: "0", width: "50%"}, delay);
 		 currentElement.prev().prev().animate( {left: "0%", top: "15%", width: "35%"}, delay);
 	}
+	
+	
+	
 	
 	
 	

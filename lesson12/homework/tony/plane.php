@@ -14,7 +14,7 @@
 		$this ->passengers = $passengers;
 
 
-		parent :: __construct($a,$b)
+		parent :: __construct($a,$b);
 	}
 }
 

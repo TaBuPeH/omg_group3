@@ -1,6 +1,6 @@
 <div class='redDiv'>
 <pre>
-<?php 
+<?php  
 /*
 	$a = "5"; // string
 	$b = 5; // integer
@@ -114,6 +114,9 @@
 	$myArr[] = 'Baf';
 	$myArr[] = 'Baf';
 	
+	
+	echo "<pre>";
+	print_r($myArr);
 	/*
 	
 	for($i=0; $i<count($myArr); $i++)

@@ -10,7 +10,7 @@ class Car extends Vehicle
 	public function __construct($a,$b,$se,$full)
 	{
 		$this->seats = $se;
-		$tihs->full =$full
+		$this->full = $full;
 		parent::__construct($a,$b);
 	}
 	public function loadPassengers($passengers)
