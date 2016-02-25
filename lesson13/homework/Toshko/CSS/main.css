@@ -1,9 +1,10 @@
 p
 {
-	margin: 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px;
 	float: left;
 	width: 100%;
+	font-size: 1.6vw;
 }
 
 pre
@@ -11,11 +12,17 @@ pre
 	width: 50%;
 	margin: 0px 0px 3% 0px;
 	float: left;
+	font-size: 1.3vw;
 }
 
 div
 {
 	width: 100%;
 	float: left;
-	height: 3%;
+	height: 5%;
+}
+
+.specialDiv
+{
+	height: 1%;
 }

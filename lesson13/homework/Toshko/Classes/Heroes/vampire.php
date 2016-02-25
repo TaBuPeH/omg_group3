@@ -4,13 +4,13 @@
 	
 	class Vampire extends LifeForm
 	{
-		public function __construct($name, $dmg, $mana, $health, $critChance, $speed)
+		public function __construct($name, $dmg, $mana, $health, $critChance, $speed, $evasion)
 		{
 			$this->type = "Vampire";
 			$this->attackName = "Bat Attack";
 			$this->specialName = "Blood Sucking Attack";
 
-			parent::__construct($name, $dmg, $mana, $health, $critChance, $speed);
+			parent::__construct($name, $dmg, $mana, $health, $critChance, $speed, $evasion);
 		}
 
 		protected function attack($target)
@@ -21,19 +21,26 @@
 			}
 
 			$critDmg = 0;
+			$damage = 0;
 
-			if(Rand(1, 100) <= $this->critChance)
+			if( Rand(1, 100) <= $this->critChance ) 
 			{
 				$critDmg += $this->dmg / 2;
 			}
 
-			$target->health -= $this->dmg + $critDmg;
-			if($target->health < 0) $target->health =0;
+			if( !(Rand(1, 100) <= $this->evasion) )
+			{
+				$target->health -= $this->dmg + $critDmg;
+				if($target->health < 0) $target->health = 0;
+				$damage = $this->dmg + $critDmg;
+			}
+			else
+			{
+				echo "<p><b>".$target->name."</b> evaded <b>".$this->name."</b>'s attack!</p>";
+			}
 
-			$damage = $this->dmg + $critDmg;
-
-			echo "<p><b>".$this->name."(".$this->health."HP)"."</b> used <b>".$this->attackName."</b>!</p>";
-			echo "<p><b>".$this->name."(".$this->health."HP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP)"."</b>!</p>";
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> used <b>".$this->attackName."</b>!</p>";
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP)"."</b>!</p>";
 		}
 
 		protected function special($target)
@@ -51,8 +58,8 @@
 			$this->health += $damage/2;
 			$this->mana -= 20;
 
-			echo "<p><b>".$this->name."(".$this->health."HP)"."</b> used <b>".$this->specialName."</b>!</p>";
-			echo "<p><b>".$this->name."(".$this->health."HP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP)"."</b>!</p>";
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> used <b>".$this->specialName."</b>!</p>";
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP)"."</b>!</p>";
 		}
 	}
 ?>
