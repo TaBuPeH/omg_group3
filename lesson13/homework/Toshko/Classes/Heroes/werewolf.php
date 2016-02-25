@@ -17,10 +17,17 @@
 		{
 			if($this->health <= 0)
 			{
+				$this->health = 0;
 				return;
 			}
 
-			if($this->health <= $this->maxHealth*30/100)
+			if($target->health <= 0)
+			{
+				$target->health = 0;
+				return;
+			}
+
+			if($this->health <= $this->maxHealth*20/100)
 			{
 				$this->dmg *= 2;
 				echo "<p><b>".$this->name."</b> is in <b>ENRAGE MODE</b>!</p>";
@@ -37,15 +44,24 @@
 			if( !(Rand(1, 100) <= $this->evasion) )
 			{
 				$target->health -= $this->dmg + $critDmg;
-				if($target->health < 0) $target->health = 0;
+				if($target->health < 0) 
+				{
+					$target->health = 0;
+				}
 				$damage = $this->dmg + $critDmg;
 			}
 			else
 			{
 				echo "<p><b>".$target->name."</b> evaded <b>".$this->name."</b>'s attack!</p>";
+
+				if($this->health <= $this->maxHealth*20/100)
+				{
+					$this->dmg /= 2;
+				}
+				return;
 			}
 
-			if($this->health <= $this->maxHealth*30/100)
+			if($this->health <= $this->maxHealth*20/100)
 			{
 				$this->dmg /= 2;
 			}
@@ -56,8 +72,15 @@
 
 		protected function special($target)
 		{
-			if($this->health <= 0 || $this->mana <= 0)
+			if($this->mana <= 0)
 			{
+				$this->mana = 0;
+				return;
+			}
+
+			if($target->health <= 0)
+			{
+				$target->health = 0;
 				return;
 			}
 

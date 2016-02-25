@@ -67,7 +67,10 @@
 
 			while($fighter1->isAlive == "true" && $fighter2->isAlive == "true")
 			{
-				echo "<div></div><p><b>Round ".$round."</b></p>";
+				if($fighter1->health > 0 && $fighter2->health > 0)
+				{
+					echo "<div></div><p><b>Round ".$round."</b></p>";
+				}
 				if($round % 2 != 0)
 				{
 					if($first == "fighter1")
