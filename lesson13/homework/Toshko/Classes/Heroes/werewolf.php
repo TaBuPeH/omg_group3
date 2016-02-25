@@ -35,6 +35,8 @@
 
 			$critDmg = 0;
 			$damage = 0;
+
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> used <b>".$this->attackName."</b>!</p>";
 			
 			if(Rand(1, 100) <= $this->critChance)
 			{
@@ -52,7 +54,7 @@
 			}
 			else
 			{
-				echo "<p><b>".$target->name."</b> evaded <b>".$this->name."</b>'s attack!</p>";
+				echo "<p><b>".$this->name."</b>'s attack was evaded!</p>";
 
 				if($this->health <= $this->maxHealth*20/100)
 				{
@@ -66,7 +68,6 @@
 				$this->dmg /= 2;
 			}
 
-			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> used <b>".$this->attackName."</b>!</p>";
 			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP)"."</b>!</p>";
 		}
 
