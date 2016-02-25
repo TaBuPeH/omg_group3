@@ -76,12 +76,19 @@
 			if($this->mana <= 0)
 			{
 				$this->mana = 0;
+				echo "<p><b>".$this->name."</b> is out of mana</p>";
 				return;
 			}
 
 			if($target->health <= 0)
 			{
 				$target->health = 0;
+				return;
+			}
+
+			if($this->health <= 0)
+			{
+				$this->health = 0;
 				return;
 			}
 

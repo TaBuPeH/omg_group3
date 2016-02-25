@@ -92,9 +92,9 @@
 				{
 					if($first == "fighter1")
 					{
-						$fighter1->special($second);
+						$fighter1->special($fighter2);
 						echo "<div class='specialDiv'></div>";
-						$second->special($fighter1);
+						$fighter2->special($fighter1);
 					}
 					else
 					{
