@@ -1,0 +1,21 @@
+p
+{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+
+pre
+{
+	width: 50%;
+	margin: 0px 0px 3% 0px;
+	float: left;
+}
+
+div
+{
+	width: 100%;
+	float: left;
+	height: 3%;
+}
