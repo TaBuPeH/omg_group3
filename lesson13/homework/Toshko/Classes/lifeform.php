@@ -14,11 +14,79 @@
 		protected $health;
 		protected $critChance;
 		protected $evasion;
-		
-		private $speed;
+		protected $speed;
 
-		protected function attack($target){}
-		protected function special($target){}
+		public function attack($target){}
+		public function special($target){}
+
+		public function attackBase($target)
+		{
+			if($this->health <= 0)
+			{
+				$this->health = 0;
+				return;
+			}
+
+			if($this->armor <= 0)
+			{
+				$this->armor = 0;
+			}
+
+			if($target->health <= 0)
+			{
+				$target->health = 0;
+				return;
+			}
+
+			if($target->armor <= 0)
+			{
+				$target->armor = 0;
+			}
+
+			$critDmg = 0;
+			$damage = 0;
+
+			echo "<p><b>".$this->name."(".$this->health."HP, ".$this->armor."Armor, ".$this->mana."MP)"."</b> used <b>".$this->attackName."</b>!</p>";
+
+			if( Rand(1, 100) <= $this->critChance ) 
+			{
+				$critDmg += $this->dmg / 2;
+			}
+
+			if( !(Rand(1, 100) <= $this->evasion) )
+			{
+				if($target->armor <= 0)
+				{
+					$target->armor = 0;
+
+					$damage = $this->dmg + $critDmg;
+					$target->health -= $this->dmg + $critDmg;
+
+					if($target->health < 0) 
+					{
+						$target->health = 0;
+					}
+
+					echo "<p><b>".$this->name."(".$this->health."HP, ".$this->armor."Armor, ".$this->mana."MP)"."</b> took ".$damage."HP from <b>".$target->name."(".$target->health."HP, ".$target->armor."Armor)</b>!</p>";
+				}
+				else
+				{
+					$damage = $this->dmg + $critDmg;
+					$target->armor -= $this->dmg + $critDmg;
+
+					if($target->armor < 0) 
+					{
+						$target->armor = 0;
+					}
+					
+					echo "<p><b>".$this->name."(".$this->health."HP, ".$this->mana."MP)"."</b> took ".$damage."Armor from <b>".$target->name."(".$target->health."HP, ".$target->armor."Armor)</b>!</p>";
+				}			}
+			else
+			{
+				echo "<p><b>".$this->name."</b>'s attack was evaded!</p>";
+				return;
+			}
+		}
 
 		public function __construct($name, $dmg, $armor, $mana, $health, $critChance, $speed, $evasion)
 		{
@@ -33,105 +101,39 @@
 			$this->evasion = $evasion;
 		}
 
-		public static function fight($fighter1, $fighter2)
+		public function getIsAlive()
 		{
-			$round = 1;
+			return $this->isAlive;
+		}
 
-			echo "<p>Let the battle between <b>".$fighter1->name."(".$fighter1->health.")"."</b> the ".$fighter1->type."and <b>".$fighter2->name."(".$fighter2->health.")"."</b> the ".$fighter2->type." begin!!!</p>";
+		public function getName()
+		{
+			return $this->name;
+		}
 
-			if($fighter1->speed > $fighter2->speed)
-			{
-				$first = "fighter1";
-				$second = "fighter2";
-				echo "<p><b>".$fighter1->name."</b> will start first!</p>";
-			}
-			else if($fighter1->speed < $fighter2->speed)
-			{
-				$first = "fighter2";
-				$second = "fighter1";
-				echo "<p><b>".$fighter2->name."</b> will start first!</p>";
-			}
-			else
-			{
-				if(Rand(0, 1) == 0)
-				{
-					$first = "fighter1";
-					$second = "fighter2";
-					echo "<p><b>".$fighter1->name."</b> will start first!</p>";
-				}
-				else
-				{
-					$first = "fighter2";
-					$second = "fighter1";
-					echo "<p><b>".$fighter2->name."</b> will start first!</p>";
-				}
-			}
+		public function getAttackName()
+		{
+			return $this->attackName;
+		}
 
-			while($fighter1->isAlive == "true" && $fighter2->isAlive == "true")
-			{
-				if($fighter1->health > 0 && $fighter2->health > 0)
-				{
-					echo "<div></div><p><b>Round ".$round."</b></p>";
-				}
-				if($round % 2 != 0)
-				{
-					if($first == "fighter1")
-					{
-						$fighter1->attack($fighter2);
-						echo "<div class='specialDiv'></div>";
-						$fighter2->attack($fighter1);
-					}
-					else
-					{
-						$fighter2->attack($fighter1);
-						echo "<div class='specialDiv'></div>";
-						$fighter1->attack($fighter2);
-					}
-					
-				}
+		public function getSpecialName()
+		{
+			return $this->specialName;
+		}
 
-				else
-				{
-					if($first == "fighter1")
-					{
-						$fighter1->special($fighter2);
-						echo "<div class='specialDiv'></div>";
-						$fighter2->special($fighter1);
-					}
-					else
-					{
-						$fighter2->special($fighter1);
-						echo "<div class='specialDiv'></div>";
-						$fighter1->special($fighter2);
-					}
-				}
+		public function getSpeed()
+		{
+			return $this->speed;
+		}
 
-				$round++;
+		public function getHealth()
+		{
+			return $this->health;
+		}
 
-				if($fighter1->health <= 0)
-				{
-					echo "<div></div>";
-					echo "<p><b>".$fighter1->name."</b> has <b>DIED</b>!</p>";
-					echo "<p><b>".$fighter2->name."</b> is the <b>WINNER</b>!</p>";
-					$fighter1->isAlive = "false";
-					return;
-				}
-
-				if($fighter2->health <= 0)
-				{
-					echo "<div></div>";
-					echo "<p><b>".$fighter2->name."</b> has <b>DIED</b>!</p>";
-					echo "<p><b>".$fighter1->name."</b> is the <b>WINNER</b>!</p>";
-					$fighter2->isAlive = "false";
-					return;
-				}
-				
-				if($round == 35)
-				{
-					echo "<p>DRAW!</p>";
-					return;
-				}
-			}
+		public function getType()
+		{
+			return $this->type;
 		}
 	}
 ?>

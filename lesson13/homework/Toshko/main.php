@@ -1,5 +1,4 @@
 <?php
-
 	function Debug($obj)
 	{
 		echo "<pre>";
@@ -9,6 +8,7 @@
 
 	require_once("Classes/Heroes/vampire.php");
 	require_once("Classes/Heroes/werewolf.php");
+	require_once("fight.php");
 
 	//name, damage, armor, mana, health, critical chance(0-100%), speed(1-3), evasion(0-100%)
 	$vamp = new Vampire("Vladimir", 15, 40, 100, 300, 10, 2, 50);
@@ -17,5 +17,5 @@
 	Debug($vamp);
 	Debug($wolf);
 
-	LifeForm::fight($wolf, $vamp);
+	fight($wolf, $vamp);
 ?>
