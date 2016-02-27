@@ -9,6 +9,7 @@
 		protected $attackName;
 		protected $specialName;
 		protected $dmg;
+		protected $armor;
 		protected $mana;
 		protected $health;
 		protected $critChance;
@@ -19,10 +20,11 @@
 		protected function attack($target){}
 		protected function special($target){}
 
-		public function __construct($name, $dmg, $mana, $health, $critChance, $speed, $evasion)
+		public function __construct($name, $dmg, $armor, $mana, $health, $critChance, $speed, $evasion)
 		{
 			$this->name = $name;
 			$this->dmg = $dmg;
+			$this->armor = $armor;
 			$this->mana = $mana;
 			$this->health = $health;
 			$this->maxHealth = $health;
