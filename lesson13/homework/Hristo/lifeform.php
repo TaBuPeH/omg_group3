@@ -79,14 +79,15 @@ class lifeform
         return $this->name;
     }
 
-    protected function setCtitChance()
+    protected function setCtitChance($crit)
     {
-        $this->critChance;
+        $this->critChance=$crit;
     }
 
     public function getCtitChance()
     {
-        return $this->critChance;
+        $crit =$this->critChance+0;
+        return $crit;
     }
 
 
