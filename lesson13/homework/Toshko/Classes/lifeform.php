@@ -53,7 +53,7 @@
 				$critDmg += $this->dmg / 2;
 			}
 
-			if( !(Rand(1, 100) <= $this->evasion) )
+			if( !(Rand(1, 100) <= $target->evasion) )
 			{
 				if($target->armor <= 0)
 				{
