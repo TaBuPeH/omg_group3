@@ -18,7 +18,7 @@ class Karapeeva extends lifeform
         $this->setStrenght(10);
         $this->setIntellect(80);
         $this->setDefense(5);
-        $this->setHealth(600);
+        $this->setHealth(1000);
         $this->setCtitChance("50%");
         $this->setName($name);
     }
@@ -28,7 +28,7 @@ class Karapeeva extends lifeform
 
         $attackedName = $target->getName();
         $attackerName = $this->getName();
-        $dmg = rand(150,300);
+        $dmg = rand(150,300)+$this->getIntellect();
 
         $target->attack($dmg);
 
@@ -54,7 +54,7 @@ class Karapeeva extends lifeform
 
         $attackedName = $target->getName();
         $attackerName = $this->getName();
-        $dmg = rand(200,400);
+        $dmg = rand(200,400)+$this->getIntellect();
 
         $target->attack($dmg);
 

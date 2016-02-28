@@ -18,7 +18,7 @@ class Beleganski extends lifeform
         $this->setStrenght(45);
         $this->setIntellect(30);
         $this->setDefense(40);
-        $this->setHealth(800);
+        $this->setHealth(1200);
         $this->setCtitChance("55%");
         $this->setName($name);
     }
@@ -27,7 +27,7 @@ class Beleganski extends lifeform
     {
         $attackedName = $target->getName();
         $attackerName = $this->getName();
-        $dmg = rand(50,100);
+        $dmg = rand(50,100)+$this->getIntellect();
 
         $target->attack($dmg);
 
