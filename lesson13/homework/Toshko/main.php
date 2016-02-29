@@ -1,4 +1,6 @@
 <?php
+
+
 	function Debug($obj)
 	{
 		echo "<pre>";
@@ -82,5 +84,5 @@
 	Debug($opm);
 
 	//fight(fighter1, fighter2)
-	fight($wolf1, $human4);
+	fight($opm, $opm);
 ?>

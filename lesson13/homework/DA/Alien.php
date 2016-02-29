@@ -18,21 +18,21 @@ class Alien extends Lifeform
 
  		{
  			$target->health = $target->health - $this->damage * $this->sequentPunch ;
- 			echo "<p><b>".$this->Name."(".$this->health."HP, </b> used <b>".$this->specialName.")</b>!</p>"; 
- 			echo "<p><b>".$target->Name."(".$target->health."HP,</b> took ".$this->damage * $this->sequentPunch."HP from <b>".$this->Name."(".$this->health."HP)</b>!</p>";
- 				
+ 			
  				if($this->health <= 0)
 			{
 				$this->health = 0;
-				return;
 			}
 
 			
 			if($target->health <= 0)
 			{
 				$target->health = 0;
-				return;
 			}
+			
+				echo "<p><b>".$this->Name."(".$this->health."HP, </b> used <b>".$this->specialName.")</b>!</p>"; 
+ 			echo "<p><b>".$target->Name."(".$target->health."HP,</b> took ".$this->damage * $this->sequentPunch."HP from <b>".$this->Name."(".$this->health."HP)</b>!</p>";
+ 			
  		}
 
  		public function attack($target)

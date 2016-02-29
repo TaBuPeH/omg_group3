@@ -1,5 +1,5 @@
 <?php 
-
+	session_start();
 	require_once("Classes/lifeform.php");
 
 	class OnePunchMan extends LifeForm
@@ -22,11 +22,14 @@
 		public function attack($target)
 		{
 			$this->health = "∞";
-
-			echo "<audio autoplay loop>
-					 <source src='OPM/OPM.mp3' type='audio/mpeg'>
-				  </audio>";
-
+			
+			if(!$_SESSION['hasAudio'])
+			{
+				echo "<audio autoplay loop>
+						 <source src='OPM/OPM.mp3' type='audio/mpeg'>
+					  </audio>";
+				$_SESSION['hasAudio'] = 1;
+			}
 			echo 	"<style>body,
 					html
 					{

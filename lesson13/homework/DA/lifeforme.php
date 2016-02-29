@@ -20,26 +20,23 @@
  	}
  	public function attacks(&$target)
  	{
- 		
-			echo "<p><b>".$this->Name."(".$this->health."HP, </b> used <b>".$this->attackName.")</b>!</p>";
-				echo "<p><b>".$target->Name."(".$target->health."HP </b> took ".$this->damage."HP from <b>".$this->Name."(".$this->health."HP)</b>!</p>";
+
+ 			$target->health=$target->health-$this->damage;
 
 
- 		$target->health=$target->health-$this->damage;
-
-
- 		if($this->health <= 0)
+ 			if($this->health <= 0)
 			{
 				$this->health = 0;
-				return;
 			}
 
 			
 			if($target->health <= 0)
 			{
 				$target->health = 0;
-				return;
 			}
+			
+	echo "<p><b>".$this->Name."(".$this->health."HP, </b> used <b>".$this->attackName.")</b>!</p>";
+				echo "<p><b>".$target->Name."(".$target->health."HP </b> took ".$this->damage."HP from <b>".$this->Name."(".$this->health."HP)</b>!</p>";
 
 
  	}
