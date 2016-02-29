@@ -5,7 +5,7 @@
 		public $isAlive = "true";
 
 		protected $name;
-		protected $type;
+		//protected $type;
 		protected $attackName;
 		protected $specialName;
 		protected $dmg;
