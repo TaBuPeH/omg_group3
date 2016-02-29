@@ -14,13 +14,13 @@
 	require_once("fight.php");
 
 	/*	Stats:
-			- damage  -> health taken from enemy on a turn
-			- armor   -> a fighter's armor needs to be destoyed to start damaging his health directly
-			- mana    -> special attack uses mana
-			- health  -> obvious
-			- critCh  -> a chance for the attacker to deliver a stronger attack(with 50% more damage)
-			- speed   -> the fighter with more speed than the other attacks first
-			- evasion -> a chane for the attack to be evaded(cancelled)
+			- damage          -> health taken from enemy on a turn
+			- armor           -> a fighter's armor needs to be destoyed to start damaging his health directly
+			- mana            -> special attack uses mana
+			- health          -> obvious
+			- criticalChance  -> a chance for the attacker to deliver a stronger attack(with 50% more damage)
+			- speed           -> the fighter with more speed than the other attacks first
+			- evasion         -> a chane for the attack to be evaded(cancelled)
 	*/
 
 	/*	Items:
@@ -79,6 +79,8 @@
 	Debug($human5);
 	Debug($human6);
 
+	Debug($opm);
+
 	//fight(fighter1, fighter2)
-	fight($vamp1, $wolf1);
+	fight($wolf1, $human4);
 ?>

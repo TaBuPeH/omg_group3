@@ -5,6 +5,7 @@
  * User: Zerzolar
  * Date: 24.2.2016 г.
  * Time: 18:35
+ * Beta Release !!!
  */
 
 
@@ -16,6 +17,7 @@
     *  Stepan      *  55   *  5    *  30   *  800  * Pikae prez terasata /
     *  Panaiotov   *  80   *  50   *  60   *  1000 * Vie ne ste hora, mqstoto vi ne e tuk!!            *
     */
+
 
 
     require_once ("karapeeva.php");
