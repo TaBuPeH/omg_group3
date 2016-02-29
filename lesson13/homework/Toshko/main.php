@@ -57,7 +57,7 @@
 	$wolf1 = new Werewolf("Moon Moon", Rand(10, 20), 10, 50, 150, 60, 1.5, 50);
 	$wolf2 = new Werewolf("Snowflake", Rand(10, 20), 10, 50, 150, 60, 1.5, 50);
 
-	$human1 = new Hooman("Tosho", 10, 15, 100, 100, 10, 2, 50, "Zerzolar's Sword");
+	$human1 = new Hooman("Tosho", 10, 15, 100, 100, 10, 2, 50, "Zerzolar's Blade");
 	$human2 = new Hooman("Gosho", 10, 15, 100, 100, 10, 2, 50, "Saitama's Cape");
 	$human3 = new Hooman("Pesho", 10, 15, 100, 100, 10, 2, 50, "Mordekaizer's Armor");
 	$human4 = new Hooman("Ivan", 10, 15, 100, 100, 10, 2, 50, "Gandalf's Robe");

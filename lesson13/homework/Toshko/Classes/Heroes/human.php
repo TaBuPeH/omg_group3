@@ -13,7 +13,7 @@
 			$this->specialName = "Smoke Weed";
 			$this->item = $item;
 
-			if($item == "Zerzolar's Sword") 
+			if($item == "Zerzolar's Blade") 
 			{
 				$dmg += 20;
 		        $critChance += 15;
