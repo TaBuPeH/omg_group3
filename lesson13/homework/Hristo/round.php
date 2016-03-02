@@ -35,7 +35,7 @@ class round
             }
             if( $this->warrior1->getHealth()>0 && $this->warrior2->getHealth()>0  )
             {
-                if(rand(0,5) == 4)
+                if(rand(0,3) == 3)
                 {
                     $this->specialAttack($this->warrior1,$this->warrior2);
                 }
@@ -52,7 +52,7 @@ class round
             }
             if( $this->warrior1->getHealth()>0 && $this->warrior2->getHealth()>0  )
             {
-                if(rand(0,5) == 4)
+                if(rand(0,3) == 3)
                 {
                     $this->specialAttack($this->warrior2,$this->warrior1);
                 }

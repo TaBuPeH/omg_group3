@@ -1,3 +1,4 @@
+
 <html>
 	
 	<head>
@@ -7,7 +8,7 @@
 	
 	<body>
 		
-		  <form method='post' action = 'login.php'> 
+		  <form method='post' action = 'info.php'> 
 			
 			 Your User Name: <input name='user' type='text' ><br>
 			

@@ -3,32 +3,27 @@
 	
 	$user[0]['username'] = 'Dancho';
 	$user[0]['password'] = 'prodan4intora98';
-
 	
 	
 	$user[1]['username'] = 'Petur';
 	$user[1]['password'] = 'Chelsea';
 
-
 	$user[2]['username'] = 'Losho_momiche04';
 	$user[2]['password'] = 'GalaxytheBestparty00';
-
 	
 	$user[3]['username'] = 'PetioFitila';
 	$user[3]['password'] = 'Neslushamnashte';
 
-
 	$user[4]['username'] = 'Wikaigi_biemqko';
 	$user[4]['password'] = 'Naduan01';
-
 	
 	$user[5]['username'] = 'JorkataBrat_nacepenabaka00';
 	$user[5]['password'] = '20smbicarki';
 	
 	
-	
-
+	echo"<pre>";
 	print_r($user);
+	echo"</pre>";
 	
 	$Koiseelognal = array();
 	
@@ -42,7 +37,10 @@
 			}
 		}
 	}
-	
-	$_SESSION['user'] = $ourLoggedUser;
 
+	
+	$_SESSION['user'] = $Koiseelognal;
+	echo "<pre> Is Logged: ";
+	print_r($_SESSION);
+	echo "</pre>";
 ?>
