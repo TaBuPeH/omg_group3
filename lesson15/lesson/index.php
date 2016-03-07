@@ -20,9 +20,19 @@ $q = "SELECT * FROM `products` INNER JOIN `shop_products` ON (`products`.`id` = 
 $q = "SELECT `products`.*,`shop_products`.`quantity`,`shops`.`id` AS `shop_id`, `shops`.`city`, `shops`.`address`  FROM `products` 
 INNER JOIN `shop_products` ON (`products`.`id` = `shop_products`.`product_id`)
 INNER JOIN `shops` ON (`shops`.`id` = `shop_products`.`shop_id`)";
+
+$q = 'SELECT *, SUM(`shop_products`.`quantity`) AS `total` FROM `shop_products` INNER JOIN `shops` ON (`shops`.`id` = `shop_products`.`shop_id`) WHERE `shop_products`.`shop_id` = 1 ';
 $result = mysql_query($q);
 
 echo "<pre>";
+
+
+for($i=0; $i<200000; $i++)
+{
+	$q = "INSERT INTO `shop_products` VALUES (null,".$i.",".($i+10000).",".($i+40000).")";
+	mysql_query($q);
+}
+
 
 $info = array();
 while(   $row = mysql_fetch_assoc($result)    )
