@@ -82,5 +82,5 @@
 	Debug($opm);
 
 	//fight(fighter1, fighter2)
-	fight($opm, $opm);
+	fight($vamp1, $wolf1);
 ?>
