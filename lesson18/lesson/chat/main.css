@@ -1,0 +1,29 @@
+#messages {
+	width:100%;
+	height:200px;
+	border: 1px solid #000;
+	margin-bottom:20px;
+	overflow: scroll;
+	float: left;
+}
+
+#myMessage
+{
+	width:80%;
+}
+
+.messageLine
+{
+	float: left;
+	width: 100%;
+}
+
+.timestamp
+{
+	color:#419568;
+}
+
+.sender
+{
+	color: #AA0000;
+}
