@@ -5,7 +5,7 @@
 			'host' => 'localhost',
 			'user' => 'root',
 			'pass' => '',
-			'database'=>'shop',
+			'database'=>'group1',
 			'encoding'=> 'utf8'
 		);
 		
@@ -72,7 +72,6 @@
 			}
 			
 			$query .= implode(',', $conditions);
-			
 			$query .= " WHERE `".$table."`.`id` = '".$row['id']."'";
 			
 			mysqli_query($this->dbHandle, $query);
@@ -83,20 +82,12 @@
 		{	
 			$query = "INSERT INTO `".$table."` (";
 
-			$conditions = array();
-			$values = array();
-
-			foreach($row as $dbField=>$dbValue)
-			{
-				$conditions[] = " `".$dbField."`";
-				$values[] = " '".$dbValue."'";
-			}
-
-			$query .= implode(',', $conditions);
+			$query .= "`".implode('`,`', array_keys($row))."`";
 			$query .= ") VALUES (";
-			$query .= implode(',', $values);
+			$query .= "'".implode("','", $row)."'";
 			$query .= ")";
-
+			
+			echo $query;
 			mysqli_query($this->dbHandle, $query);
 		}
 		
@@ -109,26 +100,4 @@
 
 	$db = new database();
 	
-	/*
-	$info[0]['ID'] = '0';
-	$info[0]['name'] = 'tomatoes';
-	$info[0]['price'] = '1.5';
-	$info[0]['quantity'] = '10';
-
-	$info[1]['id'] = 0;
-	$info[1]['name'] = 'cucumbers';
-	$info[1]['price'] = 1;
-	$info[1]['quantity'] = 20;
-
-	$info[2]['id'] = 13;
-	$info[2]['name'] = 'potatoes';
-	$info[2]['price'] = 0.8;
-	$info[2]['quantity'] = 15;
-
-	$deleteName = 'bager';
-	$searchName = 'name';
-
-	$db->deleteRow('products', $info);
-	$db->deleteRow('products', $deleteName, $searchName);
-	*/
 ?>

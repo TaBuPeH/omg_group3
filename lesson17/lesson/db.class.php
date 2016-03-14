@@ -87,6 +87,7 @@
 		{	
 			$query = "INSERT INTO `".$table."` (";
 
+
 			$query .= "`".implode('`,`', array_keys($row))."`";
 			$query .= ") VALUES (";
 			$query .= "'".implode("','", $row)."'";
