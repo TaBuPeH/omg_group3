@@ -34,3 +34,4 @@
 	$_SESSION['user'] = $ourLoggedUser;
  	print_r($_SESSION);
 ?>
+
