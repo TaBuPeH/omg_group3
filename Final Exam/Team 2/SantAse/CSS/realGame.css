@@ -1,0 +1,176 @@
+html,
+body
+{
+	background-image: url("../images/background/bg_2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 80%;
+	height: 100%;
+	width: 100%;
+}
+
+.container
+{
+	width: 90%;
+	height: 90vh;
+	margin: 4% 5%;
+	position: relative;
+}
+
+.container img#bg
+{
+	width: 100%;
+	height: 100%;
+}
+
+.container h2.playerName, .container h2.playerScore
+{
+	position: absolute;
+	font-weight: bold;
+	font-family: "Calibri";
+	font-size: 3vw;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	left: 3%;
+}
+
+.container h2#player_1
+{
+	bottom: 8%;
+}
+
+.container h2#player_2
+{
+	top: 8%;
+}
+
+.container h2#player_1_sc
+{
+	bottom: 3%;
+}
+
+.container h2#player_2_sc
+{
+	top: 3%;
+}
+
+.container h2#myTurn
+{
+	position: absolute;
+	font-weight: bold;
+	font-family: "Calibri";
+	font-size: 3vw;
+	color: #f00;
+	text-shadow: 1px 1px 1px #fff;
+	left: 3%;
+	bottom: 14%;
+}
+
+.container img#pile
+{
+	position: absolute;
+	left: 3%;
+	top: 37%;
+	width: 10%;
+	z-index: 200;
+}
+
+.container .hand
+{
+	position: absolute;
+	right: 2%;
+	width: 69%;
+}
+
+.container .hand img
+{
+	float: left;
+	width: 12.666%;
+	position: relative;
+	margin: 0px 2%;
+}
+
+.container #player_1_hand
+{
+	bottom: 4%;
+}
+
+.container #player_1_hand img
+{
+	bottom: 0px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.container #player_2_hand
+{
+	top: 4%;
+}
+
+.container #player_2_hand img
+{
+	top: 0px; 
+}
+
+.container img#trump
+{
+	transform: rotate(90deg);
+	position: absolute;
+	top: 37%;
+	left: 8%;
+	z-index: 100;
+	width: 10%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.container img.playedCard
+{
+	width: 8.78%;
+	position: absolute;
+	top: 39%;
+}
+
+.container img#player_1_playedCard
+{
+	left: 64%;
+}
+
+.container img#player_2_playedCard
+{
+	left: 50%;
+}
+
+#endGame
+{
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	top: 30%;
+	border-radius: 20px;
+}
+
+#endGame p
+{
+	text-align: center;
+	margin: 10% 0px;
+	font-size: 3.2vw;
+	font-family: "Calibri";
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#endGame span
+{
+	font-weight: bold;
+}
+
+.win
+{
+	background-color: rgba(0,256,0,0.6);
+}
+
+.lose
+{
+	background-color: rgba(256,0,0,0.6);
+}

@@ -1,0 +1,43 @@
+.middleContent
+{
+	float: left;
+	width: 70%;
+	margin: 6% 15% 3%;
+	padding: 3% 2%;
+	border-radius: 20px;
+	background-color: rgba(256,256,256,0.7);
+	box-sizing: border-box;
+}
+
+.middleContent h1
+{
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-weight: bold;
+	font-size: 3.2vw;
+	font-family: "Calibri";
+}
+
+.middleContent p
+{
+	margin-top: 2%;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 1.6vw;
+	font-family: "Calibri";
+}
+
+.middleContent h2
+{
+	margin-top: 3%;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-weight: bold;
+	font-size: 2vw;
+	font-family: "Calibri";
+}
+
+p.noMargin
+{
+	margin-top: 0.5%;
+}

@@ -1,0 +1,81 @@
+.playGame
+{
+	float: left;
+	width: 70%;
+	margin: 6% 15% 3%;
+	border-radius: 20px;
+	background-image: url("../images/home/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.playGame h1
+{
+	color: #ffc;
+	float: right;
+	width: 90%;
+	text-shadow: 1px 1px 1px #fff;
+	font-weight: bold;
+	font-size: 5vw;
+	font-family: "Calibri";
+    text-align: right;
+    margin: 6% 10% 4% 0px;  
+}
+
+.playGame h2
+{
+	color: #fff;
+	float: right;
+	width: 90%;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 2vw;
+	font-family: "Calibri";
+	text-align: right;
+	margin: 0px 10% 4% 0px;
+}
+
+.playGame button
+{
+	display: inline-block;
+	padding: 0.5% 2%;
+	font-size: 3vw;
+	font-family: "Calibri";
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;	
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius:20px;
+	box-shadow: 0 3px #999;
+	transition: 0.3s;
+	float: right;
+	margin: 6% 10% 8% 0px;
+}
+
+.playGame button:hover
+{
+	background-color: #3e8e41;
+}
+
+.playGame button:active 
+{
+	background-color: #3e8e41;
+	box-shadow: 0 1px #666;
+	transform: translateY(5.1%);
+}
+
+.playGame address
+{
+	color: #ffc;
+	float: right;
+	width: 90%;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 1.4vw;
+	font-family: "Calibri";
+	text-align: right;
+	margin: 0px 10% 2% 0px;
+}
